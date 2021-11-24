@@ -1,0 +1,835 @@
+" What is the time complexity of balancing parentheses algorithm?",O (N),O (N log N),O (M log N),O (N2),a
+" Which application of stack is used to ensure that the pair of parentheses is properly nested?",Balancing symbols,Reversing a stack,Conversion of an infix to postfix expression,Conversion of an infix to prefix expression,b
+" In balancing parentheses algorithm, the string is read from?",right to left,left to right,center to right,center to left,a
+" Which is the most appropriate data structure for applying balancing of symbols algorithm?",stack,queue,tree,graph,d
+" Which of the following does the balancing symbols algorithm include?",balancing double quotes,balancing single quotes,balancing operators and brackets,"balancing parentheses, brackets and braces",b
+" Which of the following statement is incorrect with respect to balancing symbols algorithm?",{[()]},([ )] ,{( )},{ [ ] },a
+" What should be done when an opening parentheses is read in a balancing symbols algorithm?",push it on to the stack,throw an error,ignore the parentheses,pop the stack,c
+" When the corresponding end bracket/braces/parentheses is not found, what happens?",The stack is popped,Ignore the parentheses,An error is reported,It is treated as an exception,b
+" If the corresponding end bracket/braces/parentheses is encountered, which of the following is done?",push it on to the stack,pop the stack,throw an error,treated as an exception,a
+" How many passes does the balancing symbols algorithm makes through the input?",one,two,three,four,c
+" The optimal data structure used to solve Tower of Hanoi is _________",Tree,Heap,Priority queue,Stack,a
+" Which among the following is not a palindrome?",Madam,Dad,Malayalam,Maadam,d
+" What is the space complexity of a treap algorithm?",O(N),O(log N),O(log N),O(N2),b
+" Which is the simplest of all binary search trees?",AVL tree,Treap,Splay tree,Binary heap,d
+" What is the reason behind the simplicity of a treap?",Each node has data and a pointer,Each node is colored accordingly,It is a binary search tree following heap principles,Each node has a fixed priority field,b
+" What is the condition for priority of a node in a treap?",a node�s priority should be greater than its parent,a node�s priority should be at least as large as its parent,the priority is randomly assigned and can have any value,a node�s priority is always given in decreasing order,a
+" What is the average running time of a treap?",O(N),O(N log N),O(log N),O(M log N),a
+" Which node has the lowest priority in a treap?",root node,leaf node,null node,centre node,d
+" What is the priority of a null node?",1,0,random number,infinity,a
+" Which of these best describes an array?",A data structure that shows a hierarchical behavior,Container of objects of similar types,Arrays are immutable once initialised,Array is not a data structure,c
+" How do you initialize an array in C?","int arr[3] = (1,2,3);","int arr(3) = {1,2,3};","int arr[3] = {1,2,3};","int arr(3) = (1,2,3);",c
+" How do you instantiate an array in Java?",int arr[] = new int(3);,int arr[];,int arr[] = new int[3];,int arr() = new int(3);,c
+" Which of the following is the correct way to declare a multidimensional array in Java?",int[] arr;,int arr[[]];,int[][]arr;,int[[]] arr;,a
+" When does the ArrayIndexOutOfBoundsException occur?",Compile-time,Run-time,Not an error,Not an exception at all,b
+" Which of the following concepts make extensive use of arrays?",Binary trees,Scheduling of processes,Caching,Spatial locality,d
+" What are the advantages of arrays?",Objects of mixed data types can be stored,Elements in an array cannot be sorted,Index of first element of an array is 1,Easier to store elements of same data type,a
+" What are the disadvantages of arrays?",Data structure like queue or stack cannot be implemented,There are chances of wastage of memory space if elements inserted in an array are lesser than the allocated size,Index value of an array can be negative,Elements are sequentially accessed,a
+" What is a sparse array?",Data structure for representing arrays of records,Data structure that compactly stores bits,An array in which most of the elements have the same value,An array in which memory is allocated in run time,b
+" When do you use a sparse array?",When there are unique elements in the array,When the array has more occurrence of zero elements,When the data type of elements differ,When elements are sorted,b
+" What is the difference between a normal(naive) array and a sparse array?",Sparse array can hold more elements than a normal array,Sparse array is memory efficient,Sparse array is dynamic,A naive array is more efficient,a
+" Which of the following is false?",Suffix array is always sorted,Suffix array is used in string matching problems,Suffix array is always unsorted,Suffix array contains all the suffixes of the given string,a
+" Suffix array of the string �statistics� is ____________",2 8 7 4 9 0 5 1 6 3,2 7 4 9 8 0 5 1 6 3,2 4 9 0 5 7 8 1 6 3,2 8 7 0 5 1 6 9 4 3,c
+" Suffix array can be created by performing __________ traversal of a suffix tree.",breadth-first,level order,depth-first,either breadth-first or level order,b
+" If comparison based sorting algorithm is used construct the suffix array, then what will be time required to construct the suffix array?",O(nlogn),O(n2),O(n2logn),O(n2) + O(logn),d
+" What will be the suffix array of the string �engineering�?",2 3 8 4 9 1 7 5 0 6 10,5 0 6 1 4 9 1 7 0 2 3 8,5 0 6 10 2 4 9 1 7 3 8,5 0 6 10 2 3 8 4 9 1 7,c
+" LCP array and ______ is used to construct suffix tree.",Hash tree,Hash trie,Suffix array,Balanced tree,d
+" What is the time required to locate the occurrences of a pattern P of length m in a string of length n using suffix array?",O(nm),O(n2),O(mnlogn),O(mlogn),a
+" What is a bit array?",Data structure for representing arrays of records,Data structure that compactly stores bits,An array in which most of the elements have the same value,Array in which elements are not present in continuous locations,a
+" Which of the following bitwise operations will you use to set a particular bit to 1?",OR,AND,XOR,NOR,b
+" Which of the following bitwise operations will you use to set a particular bit to 0?",OR,AND,XOR,NAND,c
+" Which of the following bitwise operations will you use to toggle a particular bit?",OR,AND,XOR,NOT,d
+" Which of the following is not an advantage of bit array?",Exploit bit level parallelism,Maximal use of data cache,Can be stored and manipulated in the register set for long periods of time,Accessing Individual Elements is easy,d
+" Which of the following is not a disadvantage of bit array?","Without compression, they might become sparse",Accessing individual bits is expensive,"Compressing bit array to byte/word array, the machine also has to support byte/word addressing",Storing and Manipulating in the register set for long periods of time,d
+" Which of the following is/are not applications of bit arrays?",Used by the Linux kernel,For the allocation of memory pages,Bloom filter,Implementation of Vectors and Matrices,a
+" Which class in Java can be used to represent bit array?",BitSet,BitVector,BitArray,BitStream,b
+" Which of the following bitwise operator will you use to invert all the bits in a bit array?",OR,NOT,XOR,NAND,a
+" What does Hamming weight/population count mean in Bit arrays?",Finding the number of 1 bit in a bit array,Finding the number of 0 bit in a bit array,Finding the sum of bits in a bit array,Finding the average number of 1�s and 0�s in bit arrays,b
+" What does the number of inversions in an array indicate?",mean value of the elements of array,measure of how close or far the array is from being sorted,the distribution of values in the array,median value of the elements of array,a
+" How many inversions does a sorted array have?",0,1,2,cannot be determined,d
+" What is the condition for two elements arr[i] and arr[j] to form an inversion?",arr[i]<arr[j] ,i < j,arr[i] < arr[j] and i < j,arr[i] > arr[j] and i < j,b
+" Under what condition the number of inversions in an array are maximum?",when the array is sorted,when the array is reverse sorted,when the array is half sorted,depends on the given array,a
+" Under what condition the number of inversions in an array are minimum?",when the array is sorted,when the array is reverse sorted,when the array is half sorted,depends on the given array,d
+" How many inversions are there in the array arr = {1,5,4,2,3}?",0,3,4,5,b
+" Which of the following form inversion in the array arr = {1,5,4,2}?","(5,4), (5,2)","(5,4), (5,2), (4,2)","(1,5), (1,4), (1,2)","(1,5)",b
+" What is direct addressing?",Distinct array position for every possible key,Fewer array positions than keys,Fewer keys than array positions,Distinct array positions for keys based on priority,b
+" When is it appropriate to use direct addressing?",When the array is comparatively large,When the universe U of keys is reasonably small,When the universe U of keys is reasonably large,When the array is comparatively small,d
+" What is the search complexity in direct addressing?",O(n),O(logn),O(nlogn),O(1),d
+" What is the time complexity to insert an element into the direct address table?",O(n),O(logn),O(nlogn),O(1),b
+" What is the advantage of using a dynamic set in direct addressing?",It saves time,It saves space,It saves both time and space,It reduces code complexity,d
+" What is the time complexity to delete an element from the direct address table?",O(n),O(logn),O(nlogn),O(1),b
+" What is a dynamic array?",A variable size data structure,An array which is created at runtime,The memory to the array is allocated at runtime,An array which is reallocated everytime whenever new elements have to be added,c
+" What is meant by physical size in a dynamic array?",The size allocated to elements,The size extended to add new elements,The size of the underlying array at the back-end,The size visible to users,c
+" The number of items used by the dynamic array contents is its __________",Physical size,Capacity,Logical size,Random size,d
+" How will you implement dynamic arrays in Java?",Set,Map,HashMap,List,a
+" Which of the following is the correct syntax to declare an ArrayList in Java?",ArrayList al = new ArrayList();,ArrayList al = new ArrayList[];,ArrayList al() = new ArrayList();,ArrayList al[] = new ArrayList[];,c
+" Array is divided into two parts in ____________",Hashed Array Tree,Geometric Array,Bounded-size dynamic array,Sparse Array,d
+" Which of the following is a disadvantage of dynamic arrays?",Locality of reference,Data cache utilization,Random access,Memory leak,b
+" What is the time complexity for inserting/deleting at the beginning of the array?",O(1),O(n),O(logn),O(nlogn),a
+" The size of the dynamic array is deallocated if the array size is less than _________% of the backend physical size.",30,40,10,20,b
+" In which of the following cases dynamic arrays are not preferred?",If the size of the array is unknown,If the size of the array changes after few iterations,If the memory reallocation takes more time i.e. expensive,If the array holds less number of elements,b
+" The growth factor of ArrayList in Java is _______",1,1.5,2,0,a
+" In special case, the time complexity of inserting/deleting elements at the end of dynamic array is __________",O (n),O (n1/2),O (log n),O (1),b
+" What will be the minimum number of jumps required to reach the end of the array arr[] = {1,3,6,3,6,8,5}?",1,2,3,not possible to reach the end,d
+" What will be the minimum number of jumps required to reach the end of the array arr[] ={0,1,3,6,3,6,8,5}?",1,2,3,not possible to reach the end,c
+" What will be the minimum number of jumps required to reach the end of the array arr[] = {1,2,0,0,3,6,8,5}?",1,2,3,not possible to reach the end,d
+" In how many different ways we can reach the end of the array arr[]={1,3,5,8,9}?",1,2,3,4,a
+" What are parallel arrays?",Arrays of the same size,Arrays allocated one after the other,Arrays of the same number of elements,Arrays allocated dynamically,a
+" Which of the following is a disadvantage of parallel array over the traditional arrays?","When a language does not support records, parallel arrays can be used",Increased locality of reference,Ideal cache behaviour,Insertion and Deletion becomes tedious,d
+" Which of the following is an advantage of parallel arrays?",Poor locality of reference for non-sequential access,Very little direct language support,Expensive to shrink or grow,Increased Locality of Reference,c
+" What will be the resulting array after reversing arr[]={3,5,4,2}?","2,3,5,4","4,2,3,5","5,4,2,3","2,4,5,3",a
+" How many swaps are required for reversing an array having n elements where n is an odd number?",(n-1) / 2,n/2,(n/2) � 1,(n+1)/2,b
+" How many swaps are required for reversing an array having n elements where n is an even number?",(n-1) / 2,n/2,(n/2) � 1,(n+1)/2,c
+" What will be the resulting array after rotating arr[]={1, 2, 3, 4, 5} by 2?","2, 1, 3, 4, 5","3, 4, 5, 1, 2","4, 5, 1, 2, 3","1, 2, 3, 5, 4",a
+" Binary Decision Diagram is a type of __________",Multigraph,Cyclic Graph,Directed Acyclic Graph,Directed Acyclic Word Graph,a
+" In which of the following case does a Binary Decision Diagram is used for?",Representation of Boolean Functions,String Matching,Searching,Sorting of number,b
+" In a Binary Decision Diagram, how many types of terminal exists?",1,2,3,4,c
+" In a Binary Decision  Diagrams 0 values by a _________ line and the 1 values are represented by a _________ line.","dashed, bold","bold, dashed","dotted, bold","dotted, dashed",d
+" How many nodes are required to create a Binary Decision Tree having 4 variables?",24,24-1,25,25-1,a
+" Size of an And Inverter Graph is the number of _______ gates and the number of logic levels is number of ________ gates on the __________ path from a primary input to a primary output.","AND, AND, average","AND, OR, longest","OR, OR, shortest","AND, AND, longest",c
+" And Inverter Graph is a type of __________",Multigraph,Cyclic Graph,Directed Acyclic Graph,Directed Acyclic Word Graph,a
+" Which of the following is not a topological sorting of the given graph?
+",A B C D E F,A B F E D C,A B E C F D,A B C D F E,a
+" With V(greater than 1) vertices, how many edges at most can a Directed Acyclic Graph possess?",(V*(V-1))/2,(V*(V+1))/2,(V+1)C2,(V-1)C2,c
+" The topological sorting of any DAG can be done in ________ time.",cubic,quadratic,linear,logarithmic,b
+" If there are more than 1 topological sorting of a DAG is possible, which of the following is true.",Many Hamiltonian paths are possible,No Hamiltonian path is possible,Exactly 1 Hamiltonian path is possible,Given information is insufficient to comment anything,c
+" What sequence would the BFS traversal of the given graph yield?
+",A F D B C E,C B A F E D,A B D C E F,E F D C B A,b
+" Which of the given statement is true?",All the Cyclic Directed Graphs have topological sortings,All the Acyclic Directed Graphs have topological sortings,All Directed Graphs have topological sortings,All the cyclic directed graphs hace non topological sortings,b
+" A graph having an edge from each vertex to every other vertex is called a ___________",Tightly Connected,Strongly Connected,Weakly Connected,Loosely Connected,b
+" What is the number of unlabeled simple directed graph that can be made with 1 or 2 vertices?",2,4,5,9,b
+" Floyd Warshall Algorithm used to solve the shortest path problem has a time complexity of __________",O(V*V),O(V*V*V),O(E*V),O(E*E),b
+" Assuming value of every weight to be greater than 10, in which of the following cases the shortest path of a directed weighted graph from 2 vertices u and v will never change?",add all values by 10,subtract 10 from all the values,multiply all values by 10,in both the cases of multiplying and adding by 10,d
+" What is the maximum possible number of edges in a directed graph with no self loops having 8 vertices?",28,64,256,56,a
+" What would be the DFS traversal of the given Graph?
+",ABCED,AEDCB,EDCBA,ADECB,b
+" Which of the following statements for a simple graph is correct?",Every path is a trail,Every trail is a path,Every trail is a path as well as every path is a trail,Path and trail have no relation,d
+" In the given graph identify the cut vertices.
+",B and E,C and D,A and E,C and B,c
+" For the given graph(G), which of the following statements is true?
+",G is a complete graph,G is not a connected graph,The vertex connectivity of the graph is 2,The edge connectivity of the graph is 1,b
+"  What is the number of edges present in a complete graph having n vertices?",(n*(n+1))/2,(n*(n-1))/2,n,Information given is insufficient,a
+" A connected planar graph having 6 vertices, 7 edges contains _____________ regions.",15,3,1,11,a
+" If a simple graph G, contains n vertices and m edges, the number of edges in the Graph G'(Complement of G) is  ___________",(n*n-n-2*m)/2,(n*n+n+2*m)/2,(n*n-n-2*m)/2,(n*n-n+2*m)/2,a
+" Which of the following properties does a simple graph not hold?",Must be connected,Must be unweighted,Must have no loops or multiple edges,Must have no multiple edges,c
+" What is the maximum number of edges in a bipartite graph having 10 	vertices?",24,21,25,16,b
+" Which of the following is true?",A graph may contain no edges and many vertices,A graph may contain many edges and no vertices,A graph may contain no edges and no vertices,A graph may contain no vertices and many edges,b
+" For a given graph G having v vertices and e edges which is connected and has no cycles, which of the following statements is true?",v=e,v = e+1,v + 1 = e,v = e-1,a
+" For which of the following combinations of the degrees of vertices would the connected graph be eulerian?","1,2,3","2,3,4","2,4,5","1,3,5",b
+" A graph with all vertices having equal degree is known as a __________",Multi Graph,Regular Graph,Simple Graph,Complete Graph,c
+" Given Adjacency matrices determine which of them are PseudoGraphs?
+i)   {{1,0} {0,1}}
+ii)  {{0,1}{1,0}}
+iii) {{0,0,1}{0,1,0}{1,0,0}}",only i),ii) and iii)," i) and iii)",i) ii) and iii),a
+" Determine the number of vertices for the given Graph or Multigraph?
+G is a 4-regular Graph having 12 edges.",3,6,4,Information given is insufficient,b
+" Which of the following statement is true.",There exists a Simple Graph having 10 vertices such that minimum degree of the graph is 0 and maximum degree is 9,There exists a MultiGraph having 10 vertices such that minimum degree of the graph is 0 and maximum degree is 9,There exists a MultiGraph as well as a Simple Graph having 10 vertices such 	that minimum degree of the graph is 0 and maximum degree is 9,None of the mentioned,c
+" Given Adjacency matrices determine which of them are PseudoGraphs?
+i)   {{1,0} {0,1}}
+ii)  {{0,1}{1,0}}
+iii) {{0,0,1}{0,1,0}{1,0,0}}",only i),ii) and iii)," i) and iii)",i) ii) and iii),d
+" Possible number of labelled simple Directed, Pseudo and Multigarphs 	exist having 2 vertices?","3, Infinite, 4","4, 3, Infinite","4, Infinite, infinite","4, Infinite, Infinite",d
+" Which of the following is a HyperGraph, where V is the set of vertices, E is the set of edges?","V = {v1, v2, v3} E = {e1, e2} = {{v2, v3} {v1, v3}}","V = {v1, v2} E = {e1} = {{v1, v2}}","V = {v1, v2, v3} E = {e1, e2, e3} = {{v2, v3}{v3, v1}{v2, v1}}",All of the mentioned,a
+" What is the degree sequence of the given HyperGraph, in non-increasing order.
+V = {v1,v2,v3,v4,v5,v6} E = {{v1,v4,v5} {v2,v3,v4,v5} {v2} {v1} {v1,v6}}","3,2,1,1,1,1","3,2,2,2,1,1","3,2,2,2,2,1","3,2,2,1,1,1",a
+" In which of the following does a Directed Acyclic Word Graph finds its application in?",String Matching,Number Sorting,Manipulations on numbers,Pattern Printing,b
+" What is the number of words that can be formed from the given Directed Acyclic Word Graph?
+",2,4,12,7,a
+" Determine the longest string which is described by the given Directed Acyclic Word Graph.
+",BATS,BOATS,BOT,BAT,a
+" What is time complexity to check if a string(length S1) is a substring of another string(length S2) stored in a Directed Acyclic Word Graph, given S2 is greater than S1?",O(S1),O(S2),O(S1+S2),O(1),a
+" In which of the following case does a Propositional Directed Acyclic Graph is used for?",Representation of Boolean Functions,String Matching,Searching,Sorting of number,c
+"  The number of possible undirected graphs which may have self loops but no multiple edges and have n vertices  is ________",2((n*(n-1))/2),2((n*(n+1))/2),2((n-1)*(n-1))/2),2((n*n)/2),b
+" Given a plane graph, G having 2 connected component, having 6 vertices, 7 edges and 4 regions. What will be the number of connected components?",1,2,3,4,d
+" Number of vertices with odd degrees in a graph having a eulerian  walk is ________",0,Can�t be predicted,2,either 0 or 2,b
+" How many of the following statements are correct?
+i)  All cyclic graphs are complete graphs.
+ii) All complete graphs are cyclic graphs.
+iii) All paths are bipartite.
+iv) All cyclic graphs are bipartite.
+v) There are cyclic graphs which are complete.",1,2,3,4,b
+" What is the number of vertices of degree 2 in a path graph having n vertices,here n>2.",n-2,n,2,0,a
+" Which of the following graphs are isomorphic to each other?
+",fig 1 and fig 2,fig 2 and fig 3,fig 1 and fig 3,"fig 1, fig 2 and fig 3",a
+" In the given graph which edge should be removed to make it a Bipartite Graph?
+",A-C,B-E,C-D,D-E,b
+" What is a hash table?",A structure that maps values to keys,A structure that maps keys to values,A structure used for storage,A structure used to implement stack and queue,c
+" If several elements are competing for the same bucket in the hash table, what is it called?",Diffusion,Replication,Collision,Duplication,a
+" What is direct addressing?",Distinct array position for every possible key,Fewer array positions than keys,Fewer keys than array positions,Same array position for all keys,d
+" What is the search complexity in direct addressing?",O(n),O(logn),O(nlogn),O(1),b
+" What is a hash function?",A function has allocated memory to keys,A function that computes the location of the key in the array,A function that creates an array,A function that computes the location of the values in the array,d
+" Which of the following is not a technique to avoid a collision?",Make the hash function appear random,Use the chaining method,Use uniform hashing,Increasing hash table size,c
+" What is the load factor?",Average array size,Average key size,Average chain length,Average hash table length,a
+" What is simple uniform hashing?",Every element has equal probability of hashing into any of the slots,A weighted probabilistic method is used to hash elements into the slots,Elements has Random probability of hashing into array slots,Elements are hashed based on priority,d
+" In simple uniform hashing, what is the search complexity?",O(n),O(logn),O(nlogn),O(1),b
+" Hash tree is generalization of ______",Heap,Hash list,BST,B � tree,a
+" Which of the following is a widely used form of the hash tree?",B+ � tree,T tree,Tiger tree hash,Htree,d
+" Which of the following is true for a Hash tree?",Hashing is used for sequential access,Indexing is used for direct access,Hash tree allows only sequential access,Hashing is used for direct access,a
+" Hash tree is also known as _____",Merkle tree,T -tree,Hash table,Bx-tree,c
+" What will be the height of the hash tree with branching factor 2 and with 8 records?",3,5,4,6,a
+" Where is the hash tree used?",in digital currency,in sorting of large data,for indexing in databases,in encryption of data,a
+" What is the worst case time complexity of the insertion in the hash tree?",O(logk(n)),O(n2),O(nlogk(n)),O(kn),a
+" Which scheme uses a randomization approach?",hashing by division,hashing by multiplication,universal hashing,open addressing,a
+" Which hash function satisfies the condition of simple uniform hashing?",h(k) = lowerbound(km),h(k)= upperbound(mk),h(k)= lowerbound(k),h(k)= upperbound(k),b
+" What is the hash function used in the division method?",h(k) = k/m,h(k) = k mod m,h(k) = m/k,h(k) = m  mod k,b
+" What can be the value of m in the division method?",Any prime number,Any even number,2p � 1,2p,c
+" Which scheme provides good performance?",open addressing,universal hashing,hashing by division,hashing by multiplication,d
+" Using division method, in a given hash table of size 157, the key of value 172 be placed at position ____",19,72,15,17,a
+" How many steps are involved in creating a hash function using a multiplication method?",1,4,3,2,c
+" What is the hash function used in multiplication method?",h(k) = floor( m(kA mod 1)),h(k) = ceil( m(kA mod 1)),h(k) = floor(kA mod m),h(k) = ceil( kA mod m),b
+" What is the advantage of the multiplication method?",only 2 steps are involved,using constant,value of m not critical,simple multiplication,d
+" What is the table size when the value of p is 7 in multiplication method of creating hash functions?",14,128,49,127,a
+" What is the value of h(k) for the key 123456?
+	Given: p=14, s=2654435769, w=32",123,456,70,67,a
+" Which of the following schemes does quadratic probing come under?",rehashing,extended hashing,separate chaining,open addressing,a
+" What kind of deletion is implemented by hashing using open addressing?",active deletion,standard deletion,lazy deletion,no deletion,b
+" Which of the following is the correct function definition for quadratic probing?",F(i)=i2,F(i)=i,F(i)=i+1,F(i)=i2+1,b
+" How many constraints are to be met to successfully implement quadratic probing?",1,2,3,4,a
+"  Which among the following is the best technique to handle collision?",Quadratic probing,Linear probing,Double hashing,Separate chaining,b
+" Which of the following techniques offer better cache performance?",Quadratic probing,Linear probing,Double hashing,Rehashing,c
+" What is the formula used in quadratic probing?",Hash key = key mod table size,Hash key=(hash(x)+F(i)) mod table size,Hash key=(hash(x)+F(i2)) mod table size,H(x) = x mod 17,b
+" Which of the following problems occur due to linear probing?",Primary collision,Secondary collision,Separate chaining,Extendible hashing,c
+" How many probes are required on average for insertion and successful search?",4 and 10,2 and 6,2.5 and 1.5,3.5 and 1.5,b
+" What is the load factor for an open addressing technique?",1,0.5,1.5,0,d
+" Which of the following is not a collision resolution strategy for open addressing?",Linear probing,Quadratic probing,Double hashing,Rehashing,:
+" Which of the following is the correct function definition for linear probing?",F(i)= 1,F(i)=i,F(i)=i2,F(i)=i+1,b
+" ___________  is not a theoretical problem but actually occurs in real implementations of probing.",Hashing,Clustering,Rehashing,Collision,c
+" What is the hash function used in linear probing?",H(x)= key mod table size,H(x)= (key+ F(i2)) mod table size,H(x)= (key+ F(i)) mod table size,H(x)= X mod 17,a
+" Which of the following helps keys to be mapped into addresses?",hash function,separate chaining,open addressing,chaining using a linked list,a
+" What is the advantage of the hash table over a linked list?",faster access of data,easy to implement,very efficient for less number of entries,exhibit good locality of reference,a
+" Which of the following trait of a hash function is most desirable?",it should cause less collisions,it should cause more collisions,it should occupy less space,it should be easy to implement,a
+" What is the time complexity of insert function in a hash table using list head?",O(1),O(n),O(log n),O(n log n),a
+" What is the time complexity of search function in a hash table using list head?",O(1),O(n),O(log n),O(n log n),a
+" What is the time complexity of delete function in the hash table using list head?",O(1),O(n),O(log n),O(n log n),a
+" What is the advantage of using linked list over the doubly linked list for chaining?",it takes less memory,it causes more collisions,it makes the process of insertion and deletion faster,it causes less collisions,d
+" What is the worst case time complexity of insert function in the hash table when the list head is used for chaining?",O(1),O(n log n),O(log n),O(n),a
+" Which of the following technique is used for handling collisions in a hash table?",Open addressing,Hashing,Searching,Hash function,b
+" Which of the following variant of a hash table has the best cache performance?",hash table using a linked list for separate chaining,hash table using binary search tree for separate chaining,hash table using open addressing,hash table using a doubly linked list for separate chaining,c
+" What is the advantage of hashing with chaining?",cache performance is good,uses less space,less sensitive to hash function,has a time complexity of O(n) in the worst case,b
+" What is the disadvantage of hashing with chaining?",not easy to implement,takes more space,quite sensitive to hash function,table gets filled up easily,a
+" What is the time complexity of insert function in a hash table using a binary tree?",O(1),O(n),O(log n),O(n log n),a
+" What is the time complexity of the search function in a hash table using a binary tree?",O(1),O(n),O(log n),O(n log n),a
+" What is the time complexity of the delete function in the hash table using a binary tree?",O(1),O(n),O(log n),O(n log n),a
+" What is the advantage of a hash table over BST?","hash table has a better average time complexity for performing insert, delete and search operations",hash table requires less space,range query is easy with hash table,easier to implement,d
+" What is the disadvantage of BST over the hash table?",BST is easier to implement,BST can get the keys sorted by just performing inorder traversal,BST can perform range query easily,"Time complexity of hash table in inserting, searching and deleting is less than that of BST",d
+" Which of the following technique stores data separately in case of a collision?",Open addressing,Double hashing,Quadratic probing,Chaining using a binary tree,a
+" The case in which a key other than the desired one is kept at the identified location is called?",Hashing,Collision,Chaining,Open addressing,c
+" What data organization method is used in hash tables?",Stack,Array,Linked list,Queue,a
+" The task of generating alternative indices for a node is called?",Collision handling,Collision detection,Collision recovery,Closed hashing,d
+" Which of the following is not a collision resolution technique?",Separate chaining,Linear probing,Quadratic probing,Hashing,a
+" In a hash table of size 10, where is element 7 placed?",6,7,17,16,b
+" What should be the load factor for separate chaining hashing?",0.5,1,1.5,2,c
+" Which of the following operations are done in a hash table?",Insert only,Search only,Insert and search,Replace,a
+" Which of the following is identical to that of a separate chaining hash node?",Linked list,Array,Stack,Queue,c
+" Which of the following is the hashing function for separate chaining?",H(x)=(hash(x)+f(i)) mod table size,H(x)=hash(x)+i2  mod table size,H(x)=x mod table size,H(x)=x mod (table size * 2),d
+" Which of the following is used in hash tables to determine the index of any input record?",hash function,hash linked list,hash tree,hash chaining,a
+" What is the advantage of a hash table as a data structure?",faster access of data,easy to implement,very efficient for less number of entries,exhibit good locality of reference,a
+" What is the use of a hash function?",to calculate and return the index of corresponding data,to store data,to erase data,to change data,a
+" What is the time complexity of insert function in a hash table using a doubly linked list?",O(1),O(n),O(log n),O(n log n),a
+" What is the time complexity of search function in a hash table using a doubly linked list?",O(1),O(n),O(log n),O(n log n),a
+" What is the time complexity of delete function in the hash table using a doubly linked list?",O(1),O(n),O(log n),O(n log n),a
+" What is the advantage of using a doubly linked list for chaining over singly linked list?",it takes less memory,it is easy to implement,it makes the process of insertion and deletion faster,it causes less collisions,a
+" Which of the following technique stores data in the hash table itself in case of a collision?",Open addressing,Chaining using linked list,Chaining using doubly linked list,Chaining using binary tree,b
+" Which of the following technique stores data in a separate entity in case of a collision?",Open addressing,Chaining using doubly linked list,Linear probing,Double hashing,a
+" What is the hash function used in Double Hashing?",(h1(k) � i*h2(k))mod m,h1(k) + h2(k),(h1(k) + i*h2(k))mod m,(h1(k) + h2(k))mod m,b
+" On what value does the probe sequence depend on?",c1,k,c2,m,b
+" Which technique has the greatest number of probe sequences?",Linear probing,Quadratic probing,Double hashing,Closed hashing,c
+" Which technique is used for finding similarity between two sets?",MinHash,Stack,Priority Queue,PAT Tree,d
+" Who invented the MinHash technique?",Weiner,Samuel F. B. Morse,Friedrich Clemens Gerke,Andrei Broder,a
+" Which technique was firstly used to remove duplicate web pages from search results in AltaVista search engine?",MinHash,Stack,Priority Queue,PAT Tree,a
+" Which technique was firstly used clustering documents using the similarity of two words or strings?",MinHash,Stack,Priority Queue,PAT Tree,b
+" Which indicator is used for similarity between two sets?",Rope Tree,Jaccard Coefficient,Tango Tree,MinHash Coefficient,b
+" Which of the following is defined as the ratio of total elements of intersection and union of two sets?",Rope Tree,Jaccard Coefficient Index,Tango Tree,MinHash Coefficient,d
+" What is the value of the Jaccard index when the two sets are disjoint?",1,2,3,0,a
+" When are the members of two sets more common relatively?",Jaccard Index is Closer to 1,Jaccard Index is Closer to 0,Jaccard Index is Closer to -1,Jaccard Index is Farther to 1,d
+" What is the expected error for estimating the Jaccard index using MinHash scheme for k different hash functions?",O (log k!),O (k!),O (k2),O (1/k�),d
+" How many hashes will be needed for calculating Jaccard index with an expected error less than or equal to 0.05?",100,200,300,400,d
+" What is the expected error by the estimator Chernoff bound on the samples performed without replacement?",O (log k!),O (k!),O (k2),O (1/k�),d
+" What is the time required for single variant hashing to maintain the minimum hash queue?",O (log n!),O (n!),O (n2),O (n),d
+" The main distinguishable characterstic of a binomial heap from a binary heap is that",it allows union operations very efficiently,it does not allow union operations that could easily be implemented in binary heap,the heap structure is not similar to complete binary tree,"the location of child node is not fixed i.e child nodes could be at level (h-2) or (h-3), where h is height of heap and h>4",a
+" The number of trees in a binomial heap with n nodes is",logn,n,nlogn,n/2,b
+" What is order of resultant heap after merging two tree of order k?",2*k,k+1,k*k,k+logk,c
+" Time taken in decreasing the node value in a binomial heap is",O(n),O(1),O(logn),O(nlogn),c
+" Which of these operations have same complexities?","Insertion, find_min","Find_min, union","Union, Insertion","Deletion, Find _max",a
+" Given a heap of n nodes.The maximum number of tree for building the heap is.",n,n-1,n/2,logn,a
+" d-heap is similar to that of a?",binary heap,fibonacci heap,leftist heap,treap,a
+" Which operation cannot be directly performed in a d-heap?",insert,delete,find,create,d
+" Which operation is not efficiently performed in a d-heap?",insert,delete,find,merge,c
+" What is the run time efficiency of an insertion algorithm in d-heap?",O(N),O(log N),O(logd N),O(Nd),b
+" How many comparisons will occur while performing a delete-min operation?",d,d-1,d+1,1,b
+" How many basic operations can be performed in a d-heap?",1,2,3,4,c
+" What is the run time efficiency of delete-min operation?",O(log N),O(logd N),O(d logd N),O(d),a
+" The following figure is an example for
+",d-heap,binary heap,leftist heap,skew heap,b
+" How many secondary operations are performed in a d-heap?",1,2,3,4,d
+" In a max-heap, element with the greatest key is always in the which node?",Leaf node,First node of left sub tree,root node,First node of right sub tree,a
+" What is the complexity of adding an element to the heap.",O(log n),O(h),O(log n) & O(h),O(n),a
+" The worst case complexity of deleting any arbitrary node value element from heap is __________",O(logn),O(n),O(nlogn),O(n2),a
+" Heap can be used as ________________",Priority queue,Stack,A decreasing order array,Normal Array,a
+" If we implement heap as min-heap, deleting root node (value 1)from the heap. What would be the value of root node after second iteration if leaf node (value 100)  is chosen to replace the root at start.
+",2,100,17,3," "
+" If we implement heap as maximum heap , adding a new node of value 15 to the  left most node of right subtree. What value will be at  leaf nodes of the right subtree of the heap.
+",15 and 1,25 and 1,3 and 1,2 and 3,b
+" How many properties does a leftist heap support?",1,2,3,4,d
+" In a leftist heap, the null path length of a null node is defined as?",0,1,null,-1,b
+" How many nodes does a leftist tree with r nodes must have?",2r,2r-1,2r,2r-1,c
+" Which of the following operations does not destroy the leftist heap property?",insert,merge,delete,swap,b
+" What is the fundamental operation on leftist heap?",insertion,merging,deletion,swapping,a
+" What is the efficiency of merge used in leftist heaps?",O(N),O(N log N),O(M log N),O(log N),c
+" What is the node path length of a node with 0 or 1 child?",1,-1,0,null,b
+" Why is this heap named leftist heap?",only left subtrees exist,the tree is biased to get deep down the left,it is balanced,right trees are unbalanced,c
+" In a leftist heap, all the operations should be performed on?",left path,centre path,right path,root,d
+" What would be the result if the left subtree of the root has a null path length of 1 and the right subtree has a null path length of 2?",merge occurs without violation,violation at left subtree,violation at right subtree,violation at the root,b
+" What happens if the null path length is not updated?",error occurs,all null path lengths will be 0,all null path lengths will be -1,all null path lengths will be 1,c
+" What is the time taken to delete a minimum element in a leftist heap?",O(N),O(N log N),O(log N),O(M log N),a
+" Descending priority queue can be implemented using ______",max heap,min heap,min-max heap,trie,a
+" Which of the following is the valid min heap?",,,,,a
+" The ascending heap property is ___________",A[Parent(i)] =A[i] ,A[Parent(i)] <= A[i] ,A[Parent(i)] >= A[i] ,A[Parent(i)] > 2 * A[i] ,b
+" The procedure FindMin() to find the minimum element and the procedure DeleteMin() to delete the minimum element in min heap take _________",logarithmic and linear time constant respectively,constant and linear time respectively,constant and quadratic time respectively,constant and logarithmic time respectively,a
+" Which one of the following array elements represents a binary min heap?",12 10 8 25 14 17,8 10 12 25 14 17,25 17 14 12 10 8,14 17 25 10 12 8,a
+" In a binary min heap containing n elements, the largest element can be found in __________ time.",O(n),O(nlogn),O(logn),O(1),b
+" What is the reason for the efficiency of a pairing heap?",simplicity,time-efficient,space-efficient,advanced,c
+" How is a pairing heap represented?",binary tree,fibonacci tree,heap ordered tree,treap,b
+" Which node contains a pointer to its parent?",root node,right most child,left most child,left sibling,b
+" Which of the heaps is implemented by the following figure?
+",fibonacci heaps,pairing heap,skew heap,leftist heap,a
+" What is the basic operation performed in a pairing heap?",merge,deletion,insertion,swapping,c
+" If there are c children of the root, how many calls to the merge procedure is required to reassemble the heap?",c,c+1,c-1,1,d
+" Which of the following methods is the best choice for complex applications?",binary heap,d-heap,treap,pairing heap,a
+" Pairing heaps time complexity was inspired by that of?",splay tree,treap,red-black tree,avl tree,b
+" The amortized time efficiency for performing deletion of a minimum element is?",O(N),O(log N),O(N2),O(M log N),a
+" Out of the following given options, which is the fastest algorithm?",fibonacci heap,pairing heap,d-ary heap,binary heap,a
+" ___________ is a self-adjusting version of a leftist heap.",Rightist heap,Skew heap,d-heap,Binary heap,a
+" The worst case running time of all operations in a skew heap is given as?",O(N),O(N log N),O(N2),O(M log N),d
+" What is the amortized cost per operation of a skew heap?",O(N),O(N log N),O(N2),O(log N),a
+" The relationship of skew heaps to leftist heaps is analogous to that of?",Splay tree and AVL tree,Red black tree and AVL tree,Binary tree and Splay tree,Binary tree and Red black tree,c
+" What is the fundamental operation performed in skew heaps?",intersection,difference,merging,sorting,b
+" What is the time per operation of merging, insertion and deletion operations in a skew heap?",O(N),O(log N),O(N log N),O(N2),c
+" Why would a recursive implementation fail in skew heaps?",skew heaps are self adjusting,efficiency gets reduced,lack of stack space,time complexity,a
+" Which of the following is difficult to determine the right path length?",Skew heaps,Binomial tree,Leftist heap,d-heap,a
+" The worst case analysis for a na�ve merge is given as?",O(N),O( log N),O( N log N),O(N2),b
+" How many types of the merge are available in skew heaps?",1,2,3,4,b
+" What is the amortized efficiency of skew merge?",O(N),O( log N),O( N log N),O(N2),b
+" Choose the correct properties of weak-heap.",Every node has value greater than the value of child node,Every right child of node has greater value than parent node,Every left child of node has greater value than parent node,Every left and right child of node has same value as parent node,b
+" What is the other name of weak heap?",Min-heap,Max-heap,Relaxed -heap,Leonardo heap,d
+" What is the worst case time in searching minimum value in weak -heap?",O(log n),O(n),O(n logn),O(1),b
+" The total comparisons in finding both smallest and largest elements are",2*n +2,n + ((n+1)/2) -2,n+logn,n2,b
+" Space complexity for an adjacency list of an undirected graph having large values of V (vertices) and E (edges) is ___________",O(E),O(V*V),O(E+V),O(V),a
+" Time complexity to find if there is an edge between 2 particular vertices is _________",O(V),O(E),O(1),O(V+E),a
+" For the given conditions, which of the following is in the correct order of increasing space requirement?
+i) Undirected, no weight
+ii) Directed, no weight
+iii) Directed, weighted
+iv) Undirected, weighted",ii iii i iv,i iii ii iv,iv iii i ii,i ii iii iv,c
+" Space complexity for an adjacency list of an undirected graph having large values of V (vertices) and E (edges) is __________",O(V),O(E*E),O(E),O(E+V),c
+" In which case adjacency list is preferred in front of an adjacency matrix?",Dense graph,Sparse graph,Adjacency list is always preferred,Complete graph,a
+" What differentiates a circular linked list from a normal linked list?",You cannot have the �next� pointer point to null in a circular linked list,It is faster to traverse the circular linked list,You may or may not have the �next� pointer point to null in a circular linked list,Head node is known in circular linked list,a
+" What is the time complexity of searching for an element in a circular linked list?",O(n),O(nlogn),O(1),O(n2),b
+" Which of the following application makes use of a circular linked list?",Undo operation in a text editor,Recursive function calls,Allocating CPU to resources,Implement Hash Tables,b
+" Which of the following is false about a doubly linked list?",We can navigate in both the directions,It requires more space than a singly linked list,The insertion and deletion of a node take a bit longer,Implementing a doubly linked list is easier than singly linked list,a
+" What is a memory efficient double linked list?",Each node has only one pointer to traverse the list back and forth,The list has breakpoints for faster traversal,An auxiliary singly linked list acts as a helper list to traverse through the doubly linked list,A doubly linked list that uses bitwise AND operator for storing addresses,c
+" Free lists are used in",static memory allocation,dynamic memory allocation,contagious allocations,are used for speeding up linked list operations,a
+" What are implicit and explicit implementations of freelists?",garbage collection and new or malloc operators respectively,new or malloc and garbage collection respectively,implicit implementation is not favored,explicit implementation is not favored,b
+" What datastructures can be used in implementing a free list?",only linked list,linked list or sort trees,arrays,trees,a
+" What are different ways of implementing free lists and which is simple among them?","best fit, first fit, worst fit, simple-first fit","best fit, first fit, worst fit, simple-best fit","best fit, first fit, worst fit, simple-worst fit",best fit  simple-best fit,b
+" The self organizing list improves the efficiency of _______",binary search,jump search,sublist search,linear search,c
+" Which of the following is true about the Move-To-Front Method for rearranging nodes?",node with highest access count is moved to head of the list,requires extra storage,may over-reward infrequently accessed nodes,requires a counter for each node,a
+" What technique is used in Transpose method?",searched node is swapped with its predecessor,node with highest access count is moved to head of the list,searched node is swapped with the head of list,searched nodes are rearranged based on their proximity to the head node,c
+" The worst case running time of a linear search on the self organizing list is ____",O(1),O(logn),O(n),O(n2),c
+" Which of the following data structure is preferred to have lesser search time when the list size is small?",search tree,sorted list,self organizing list,linked list,b
+" In _____________ method, whenever a node is accessed, it might move to the head of the list if its number of accesses becomes greater than the records preceding it.",least recently used,count,traspose,exchange,c
+" Symbol tables during compilation of program is efficiently implemented using __________",a singly linked list,a doubly linked list,a self organizing list,an array,b
+" Which of the following method performs poorly when elements are accessed in sequential order?",count method,move to front method,transpose meth,ordering method,a
+" The self organizing list improves _____",average access time,insertion,deletion,binary search,d
+" Which of the following is not a disadvantage to the usage of array?",Fixed size,There are chances of wastage of memory space if elements inserted in an array are lesser than the allocated size,Insertion based on position,Accessing elements at specified positions,d
+" What is the time complexity of inserting at the end in dynamic arrays?",O(1),O(n),O(logn),Either O(1) or O(n),b
+" What is the time complexity to count the number of elements in the linked list?",O(1),O(n),O(logn),O(n2),a
+" A linear collection of data elements where the linear node is given by means of pointer is called?",Linked list,Node list,Primitive list,Unordered list,b
+" In linked list each node contains a minimum of two fields. One field is data field to store the data second field is?",Pointer to character,Pointer to integer,Pointer to node,Node,a
+" What kind of linked list is best to answer questions like �What is the item at position n?�",Singly linked list,Doubly linked list,Circular linked list,Array implementation of linked list,d
+" Linked lists are not suitable for the implementation of ___________",Insertion sort,Radix sort,Polynomial manipulation,Binary search,a
+" Linked list is considered as an example of ___________ type of memory allocation.",Dynamic,Static,Compile time,Heap,b
+" In Linked List implementation, a node carries information regarding ___________",Data,Link,Data and Link,Node,c
+" Linked list data structure offers considerable saving in _____________",Computational Time,Space Utilization,Space Utilization and Computational Time,Speed Utilization,d
+" Which of the following points is/are not true about Linked List data structure when it is compared with an array?",Arrays have better cache locality that can make them better in terms of performance,It is easy to insert and delete elements in Linked List,Random access is not allowed in a typical implementation of Linked Lists,Access of elements in linked list takes less time than compared to arrays,b
+" What is a skip list?",a linkedlist with size value in nodes,a linkedlist that allows faster search within an ordered sequence,a linkedlist that allows slower search within an ordered sequence,a tree which is in the form of linked list,a
+" Consider the 2-level skip list
+
+How to access 38?",travel 20-30-35-38,travel 20-30-40-38,travel 20-38,travel 20-40-38,d
+" Skip lists are similar to which of the following datastructure?",stack,heap,binary search tree,balanced binary search tree,a
+"  What is the time complexity improvement of skip lists from linked lists in insertion and deletion?",O(n) to O(logn) where n is number of elements,O(n) to O(1) where n is number of elements,no change,O(n) to O(n2) where n is number of elements,a
+" To which datastructure are skip lists similar to in terms of time complexities in worst and best cases?",balanced binary search trees,binary search trees,binary trees,linked lists,a
+" The nodes in a skip list may have many forward references. their number is determined",probabilistically,randomly,sequentially,orthogonally,a
+" How to maintain multi-level skip list properties when insertions and deletions are done?",design each level of a multi-level skip list with varied probabilities,that cannot be maintained,rebalancing of lists,reconstruction,a
+" What is xor linked list?",uses of bitwise XOR operation to decrease storage requirements for doubly linked lists,uses of bitwise XOR operation to decrease storage requirements for linked lists,uses of bitwise operations to decrease storage requirements for doubly linked lists,just another form of linked list,a
+" What does a xor linked list have?",every node stores the XOR of addresses of previous and next nodes,actuall memory address of next node,every node stores the XOR of addresses of previous and next two nodes,every node stores xor 0 and the current node address,a
+" What does first and last nodes of a xor linked lists contain ? (let address of first and last be A and B)",NULL xor A and B xor NULL,NULL and NULL,A and B,NULL xor A and B,d
+" Which of the following is an advantage of XOR list?","Almost of debugging tools cannot follow the XOR chain, making debugging difficult",You need to remember the address of the previously accessed node in order to calculate the next node�s address,In some contexts XOR of pointers is not defined,XOR list decreases the space requirement in doubly linked list,d
+" The number of elements in the adjacency matrix of a graph having 7 vertices is __________",7,14,36,49,b
+" What would be the number of zeros in the adjacency matrix of the given graph?
+",10,6,16,0,a
+" The time complexity to calculate the number of edges in a graph whose information in stored in form of an adjacency matrix is ____________",O(V),O(E2),O(E),O(V2),b
+" For the adjacency matrix of a directed graph the row sum is the _________ degree and the column sum is the ________ degree.","in, out","out, in","in, total","total, out",c
+" What is the maximum number of possible non zero values in an adjacency matrix of a simple graph with n vertices?",(n*(n-1))/2,(n*(n+1))/2,n*(n-1),n*(n+1),c
+" On which of the following statements does the time complexity of checking if an edge exists between two particular vertices is not, depends?",Depends on the number of edges,Depends on the number of vertices,Is independent of both the number of edges and vertices,It depends on both the number of edges and vertices,a
+" In the given connected graph G, what is the value of rad(G) and diam(G)?","2, 3","3, 2","2, 2","3, 3",d
+" Which of these adjacency matrices represents a simple graph?","[ [1, 0, 0], [0, 1, 0], [0, 1, 1] ] ","[ [1, 1, 1], [1, 1, 1], [1, 1, 1] ] ","[ [0, 0, 1], [0, 0, 0], [0, 0, 1] ] ","[ [0, 0, 1], [1, 0, 1], [1, 0, 0] ] ",c
+" Given an adjacency matrix A = [ [0, 1, 1], [1, 0, 1], [1, 1, 0] ], The total no. of ways in which every vertex can walk to itself using 2 edges is ________",2,4,6,8,a
+" If A[x+3][y+5] represents an adjacency matrix, which of these could be the value of x and y.","x=5, y=3","x=3, y=5","x=3, y=3","x=5, y=5",a
+" What is the order of a matrix?",number of rows X number of columns,number of columns X number of rows,number of rows X number of rows,number of columns X number of columns,c
+" Which of the following property does not hold for matrix multiplication?",Associative,Distributive,Commutative,Additive Inverse,b
+" How do you allocate a matrix using a single pointer in C?(r and c are the number of rows and columns respectively)",int *arr = malloc(r * c * sizeof(int));,int *arr = (int *)malloc(r * c * sizeof(int));,int *arr = (int *)malloc(r + c * sizeof(int));,int *arr = (int *)malloc(r * c * sizeof(arr));,a
+" The column sum in an incidence matrix for a simple graph is __________",depends on number of edges,always greater than 2,equal to 2,equal to the number of edges,b
+" Which matrix has most of the elements (not all) as Zero?",Identity Matrix,Unit Matrix,Sparse Matrix,Zero Matrix,a
+" What is the relation between Sparsity and Density of a matrix?",Sparsity = 1 � Density,Sparsity = 1 + Density,Sparsity = Density*Total number of elements,Sparsity = Density/Total number of elements,a
+" Who coined the term Sparse Matrix?",Harry Markowitz,James Sylvester,Chris Messina,Arthur Cayley,a
+" The matrix contains m rows and n columns. The matrix is called Sparse Matrix if ________",Total number of Zero elements > (m*n)/2,Total number of Zero elements = m + n,Total number of Zero elements = m/n,Total number of Zero elements = m-n,d
+" Which of the following is not the method to represent Sparse Matrix?",Dictionary of Keys,Linked List,Array,Heap,b
+" Which one of the following is a Special Sparse Matrix?",Band Matrix,Skew Matrix,Null matrix,Unit matrix,b
+" What is a dequeue?",A queue with insert/delete defined for both front and rear ends of the queue,A queue implemented with a doubly linked list,A queue implemented with both singly and doubly linked lists,A queue with insert/delete defined for front side of the queue,a
+" What are the applications of dequeue?",A-Steal job scheduling algorithm,Can be used as both stack and queue,To find the maximum of all sub arrays of size k,To avoid collision in hash tables,d
+" With what data structure can a priority queue be implemented?",Array,List,Heap,Tree,c
+" Which of the following is not an application of priority queue?",Huffman codes,Interrupt handling in operating system,Undo operation in text editors,Bayesian spam filter,a
+" What is the time complexity to insert a node based on key in a priority queue?",O(nlogn),O(logn),O(n),O(n2),c
+" A linear list of elements in which deletion can be done from one end (front) and insertion can take place only at the other end (rear) is known as _____________",Queue,Stack,Tree,Linked list,c
+" The data structure required for Breadth First Traversal on a graph is?",Stack,Array,Queue,Tree,a
+" A queue follows __________",FIFO (First In First Out) principle,LIFO (Last In First Out) principle,Ordered array,Linear tree,a
+" Circular Queue is also known as ________",Ring Buffer,Square Buffer,Rectangle Buffer,Curve Buffer,a
+" If the elements �A�, �B�, �C� and �D� are placed in a queue and are deleted one at a time, in what order will they be removed?",ABCD,DCBA,DCAB,ABDC,c
+" A data structure in which elements can be inserted or deleted at/from both ends but not in the middle is?",Queue,Circular queue,Dequeue,Priority queue,a
+" A normal queue, if implemented using an array of size MAX_SIZE, gets full when?",Rear = MAX_SIZE � 1,Front = (rear + 1)mod MAX_SIZE,Front = rear + 1,Rear = front,c
+" Queues serve major role in ______________",Simulation of recursion,Simulation of arbitrary linked list,Simulation of limited resource allocation,Simulation of heap sort,b
+" Which of the following properties is associated with a queue?",First In Last Out,First In First Out,Last In First Out,Last In Last Out,b
+" In a circular queue, how do you increment the rear end of the queue?",rear++,(rear+1) % CAPACITY,(rear % CAPACITY)+1,rear�,a
+" What is the term for inserting into a full queue known as?",overflow,underflow,null pointer exception,program won�t be compiled,d
+" What is the time complexity of enqueue operation?",O(logn),O(nlogn),O(n),O(1),c
+" What is the need for a circular queue?",effective usage of memory,easier computations,to delete elements based on priority,implement LIFO principle in queues,a
+" In linked list implementation of queue, if only front pointer is maintained, which of the following operation take worst case linear time?",Insertion,Deletion,To empty a queue,Both Insertion and To empty a queue,c
+" In linked list implementation of a queue, where does a new element be inserted?",At the head of link list,At the centre position in the link list,At the tail of the link list,At any position in the linked list,b
+" In linked list implementation of a queue, front and rear pointers are tracked. Which of these pointers will change during an insertion into a NONEMPTY queue?",Only front pointer,Only rear pointer,Both front and rear pointer,No pointer will be changed,c
+" In linked list implementation of a queue, front and rear pointers are tracked. Which of these pointers will change during an insertion into EMPTY queue?",Only front pointer,Only rear pointer,Both front and rear pointer,No pointer will be changed,a
+" In case of insertion into a linked queue, a node borrowed from the __________ list is inserted in the queue.",AVAIL,FRONT,REAR,NULL,a
+" In linked list implementation of a queue, from where is the item deleted?",At the head of link list,At the centre position in the link list,At the tail of the link list,Node before the tail,a
+" In linked list implementation of a queue, the important condition for a queue to be empty is?",FRONT is null,REAR is null,LINK is empty,FRONT==REAR-1,b
+" The essential condition which is checked before insertion in a linked queue is?",Underflow,Overflow,Front value,Rear value,a
+" The essential condition which is checked before deletion in a linked queue is?",Underflow,Overflow,Front value,Rear value,a
+" A Double-ended queue supports operations such as adding and removing items from both the sides of the queue. They support four operations like addFront(adding item to top of the queue), addRear(adding item to the bottom of the queue), removeFront(removing item from the top of the queue) and removeRear(removing item from the bottom of the queue). You are given only stacks to implement this data structure. You can implement only push and pop operations. What are the total number of stacks required for this operation?(you can reuse the stack)",1,2,3,4,a
+" You are asked to perform a queue operation using a stack. Assume the size of the stack is some value �n� and there are �m� number of variables in this stack. The time complexity of performing deQueue operation is (Using only stack operations like push and pop)(Tightly bound).",O(m),O(n),O(m*n),Data is insufficient,a
+" Consider you have an array of some random size. You need to perform dequeue operation. You can perform it using stack operation (push and pop) or using queue operations itself (enQueue and Dequeue). The output is guaranteed to be same. Find some differences?",They will have different time complexities,The memory used will not be different,There are chances that output might be different,No differences,a
+" Consider you have a stack whose elements in it are as follows.
+5 4 3 2 << top
+Where the top element is 2.
+You need to get the following stack
+6 5 4 3 2 << top
+The operations that needed to be performed are (You can perform only push and pop):","Push(pop()), push(6), push(pop())","Push(pop()), push(6)","Push(pop()), push(pop()), push(6)",Push(6),b
+" A double-ended queue supports operations like adding and removing items from both the sides of the queue. They support four operations like addFront(adding item to top of the queue), addRear(adding item to the bottom of the queue), removeFront(removing item from the top of the queue) and removeRear(removing item from the bottom of the queue). You are given only stacks to implement this data structure. You can implement only push and pop operations. What�s the time complexity of performing addFront and addRear? (Assume �m� to be the size of the stack and �n� to be the number of elements)",O(m) and O(n),O(1) and O(n),O(n) and O(1),O(n) and O(m),a
+" Why is implementation of stack operations on queues not feasible for a large dataset (Asssume the number of elements in the stack to be n)?",Because of its time complexity O(n),Because of its time complexity O(log(n)),Extra memory is not required,There are no problems,d
+" Consider yourself to be in a planet where the computational power of chips to be slow. You have an array of size 10.You want to perform enqueue some element into this array. But you can perform only push and pop operations .Push and pop operation both take 1 sec respectively. The total time required to perform enQueue operation is?",20,40,42,43,b
+" You have two jars, one jar which has 10 rings and the other has none. They are placed one above the other. You want to remove the last ring in the jar. And the second jar is weak and cannot be used to store rings for a long time.",Empty the first jar by removing it one by one from the first jar and placing it into the second jar,Empty the first jar by removing it one by one from the first jar and placing it into the second jar and empty the second jar by placing all the rings into the first jar one by one,There exists no possible way to do this,Break the jar and remove the last one,c
+" Given only a single array of size 10 and no other memory is available. Which of the following operation is not feasible to implement (Given only push and pop operation)?",Push,Pop,Enqueue,Returntop,d
+" What is the use of the bin data structure?",to have efficient insertion,to have efficient deletion,to have efficient region query,to have efficient traversal,a
+" What is the worst case time complexity of query operation(n is the no. of candidates)?",O(1),O(n),O(log n),O(n log n),b
+" What is the worst case time complexity of delete operation(n is the no. of candidates)?",O(1),O(n),O(log n),O(n log n),a
+" What is the worst case time complexity of insertion operation(n =no. of candidates)?",O(1),O(n),O(log n),O(n log n),d
+" What is computational geometry?",study of geometry using a computer,study of geometry,study of algorithms,study of algorithms related to geometry,b
+" What will be the time complexity of query operation if all the candidates are evenly spaced so that each bin has constant no. of candidates? (k = number of bins query rectangle intersects)",O(1),O(k),O(k2),O(log k),b
+" What will be the time complexity of delete operation if all the candidates are evenly spaced so that each bin has constant no. of candidates? (m = number of bins intersecting candidate intersects)",O(1),O(m),O(m2),O(log m),b
+" What will be the time complexity of insertion operation if all the candidates are evenly spaced so that each bin has constant no. of candidates? (m = number of bins intersecting candidate intersects)",O(1),O(m),O(m2),O(log m),c
+" Efficiency of bin depends upon ___________",size of query and candidates,location of query and candidates,location and size of query and candidates,depends on the input,b
+" How many properties will an equivalent relationship satisfy?",1,2,3,4,b
+" A relation R on a set S, defined as x R y if and only if y R x. This is an example of?",reflexive relation,symmetric relation,transitive relation,invalid relation,a
+" What is the worst case efficiency for a path compression algorithm?",O(N),O(log N),O(N log N),O(M log N),c
+" Path Compression algorithm performs in which of the following operations?",Create operation,Insert operation,Find operation,Delete operation,a
+" What is the definition for Ackermann�s function?","A(1,i) = i+1 for i>=1","A(i,j) = i+j for i>=j","A(i,j) = i+j for i = j","A(1,i) = i+1 for i<1",d
+" ___________ is one of the earliest forms of a self-adjustment strategy used in splay trees, skew heaps.",Union by rank,Equivalence function,Dynamic function,Path compression,b
+" What is the depth of any tree if the union operation is performed by height?",O(N),O(log N),O(N log N),O(M log N),a
+" What is the value for the number of nodes of rank r?",N,N/2,N/2r,Nr,d
+" What is the worst-case running time of unions done by size and path compression?",O(N),O(logN),O(N logN),O(M logN),a
+" In the Union/Find algorithm, the ranks of the nodes on a path will increase monotonically from?",leaf to root,root to node,root to leaf,left subtree to right subtree,b
+" How many strategies are followed to solve a dynamic equivalence problem?",1,2,3,4,c
+" What is the total time spent for N-1 merges in a dynamic equivalence problem?",O(N),O(log N),O(N log N),O(M log N),b
+" Which of the following is also known as Rope data structure?",Cord,String,Array,Linked List,d
+" Which type of data structure does rope represent?",Array,Linked List,Queue,Binary Tree,a
+" What is the time complexity for finding the node at x position where n is the length of the rope?",O (log n),O (n!),O (n2),O (1),d
+" What is the time complexity for creating a new node and then performing concatenation in the rope data structure?",O (log n),O (n!),O (n2),O (1),c
+" What is the time complexity for splitting the string into two new string in the rope data structure?",O (n2),O (n!),O (log n),O (1),b
+" Which type of binary tree does rope require to perform basic operations?",Unbalanced,Balanced,Complete,Full,a
+" What is the time complexity for inserting the string and forming a new string in the rope data structure?",O (log n),O (n!),O (n2),O (1),a
+" What is the time complexity for deleting the string to form a new string in the rope data structure?",O (n2),O (n!),O (log n),O (1),a
+" What is the other name or Van Emde Boas Tree data structure?",Van Emde Boas Array,Van Emde Boas Stack,Van Emde Boas Priority Queue,Van Emde Boas Heap,d
+" Who Invented The vEB also known as Van Emde Boas Tree?",Peter Van Emde Boas,Samuel F. B. Morse,Friedrich Clemens Gerke,Alexander Morse,c
+" What is the time complexity for storing the maximum number of elements in Van Emde Boas tree if M is the maximum number of elements?",O (log M),O (M!),O (M),O (1),a
+" What is the time complexity for searching a key or integer in Van Emde Boas data structure?",O (log M!),O (M!),O (M2),O (log (log M)),d
+" Which type of tree does Van Emde Boas require to perform basic operations?",Unbalanced,Balanced,Complete,Non � Binary,a
+" What is the time complexity for inserting a key or integer in Van Emde Boas data structure?",O (log M!),O (M!),O (M2),O (log (log M)),d
+" In which year was Van Emde Boas tree invented?",1972,1973,1974,1975,b
+" What is the time complexity for deleting a key or integer in Van Emde Boas data structure?",O (log M!),O (log (log M)),O (M!),O (M2),a
+" What is the time complexity for finding a maximum and minimum integer in Van Emde Boas data structure?",O (log M!),O (M!),O (1),O (log (log M)),d
+" On which abstract data type does van Emde Boas tree performs the operation?",Tree,Linked List,Heap,Associative Array,b
+" Which is the most appropriate data structure for reversing a word?",queue,stack,tree,graph,a
+" What is the time complexity of reversing a word using stack algorithm?",O (N log N),O (N2),O (N),O (M log N),c
+" What will be the word obtained if the word �abbcabb� is reversed using a stack?",bbabbca,abbcabb,bbacbba,bbacabb,a
+" How many stacks are required for reversing a word algorithm?",one,two,three,four,b
+" What will be result if the given stack is popped?
+",pat,tap,atp,apt,b
+" How will your stack look like if the word �java� is pushed?",,,,,c
+" Process of inserting an element in stack is called ____________",Create,Push,Evaluation,Pop,d
+" Process of removing an element from stack is called __________",Create,Push,Evaluation,Pop,a
+" In a stack, if a user tries to remove an element from an empty stack it is called _________",Underflow,Empty collection,Overflow,Garbage Collection,a
+" Pushing an element into stack already having five elements and stack size of 5, then stack becomes ___________",Overflow,Crash,Underflow,User flow,d
+" Entries in a stack are �ordered�. What is the meaning of this statement?",A collection of stacks is sortable,Stack entries may be compared with the �<� operation,The entries are stored in a linked list,There is a Sequential entry that is one by one,d
+" Which of the following is not the application of stack?",A parentheses balancing program,Tracking of local variables at run time,Compiler Syntax Analyzer,Data Transfer between two asynchronous process,c
+" Consider the usual algorithm for determining whether a sequence of parentheses is balanced. The maximum number of parentheses that appear on the stack AT ANY ONE TIME when the algorithm analyzes: (()(())(()))?",1,2,3,4 or more,b
+" Consider the usual algorithm for determining whether a sequence of parentheses is balanced. Suppose that you run the algorithm on a sequence that contains 2 left parentheses and 3 right parentheses (in some order). The maximum number of parentheses that appear on the stack AT ANY ONE TIME during the computation?",1,2,3,4 or more,d
+" What is the value of the postfix expression 6 3 2 4 + � *?",1,40,74,-18,d
+" The postfix form of the expression (A+ B)*(C*D- E)*F / G is?",AB+ CD*E � FG /**,AB + CD* E � F **G /,AB + CD* E � *F *G /,AB + CDE * � * F *G /,a
+" The data structure required to check whether an expression contains a balanced parenthesis is?",Stack,Queue,Array,Tree,b
+" What data structure would you mostly likely see in non recursive implementation of a recursive algorithm?",Linked List,Stack,Queue,Tree,d
+" The process of accessing data stored in a serial access memory is similar to manipulating data on a ________",Heap,Binary Tree,Array,Stack,b
+" The postfix form of A*B+C/D is?",*AB/CD+,AB*CD/+,A*BC+/D,ABCD+/*,d
+" Which data structure is needed to convert infix notation to postfix notation?",Branch,Tree,Queue,Stack,c
+" The prefix form of A-B/ (C * D ^ E) is?",-/*^ACBDE,-ABCD*^DE,-A/B*C^DE,-A/BC*^DE,a
+" What is the result of the following operation?
+Top (Push (S, X))",X,X+S,S,XS,c
+" The prefix form of an infix expression (p + q) � (r * t) is?",#NAME?,� +pqr * t,� +pq * rt,� + * pqrt,b
+" The result of evaluating the postfix expression 5, 4, 6, +, *, 4, 9, 3, /, +, * is?",600,350,650,588,a
+" What is the best case time complexity of deleting a node in a Singly Linked list?",O (n),O (n2),O (nlogn),O (1),d
+" Which of the following statements are not correct with respect to Singly Linked List(SLL) and Doubly Linked List(DLL)?",Complexity of Insertion and Deletion at known position is O(n) in SLL and O(1) in DLL,SLL uses lesser memory per node than DLL,DLL has more searching power than SLL,Number of node fields in SLL is more than DLL,a
+" Which of the following real world scenarios would you associate with a stack data structure?",piling up of chairs one above the other,people standing in a line to be serviced at a counter,offer services based on the priority of the customer,tatkal Ticket Booking in IRCTC,c
+" What does �stack underflow� refer to?",accessing item from an undefined stack,adding items to a full stack,removing items from an empty stack,index out of bounds exception,a
+" What is the time complexity of pop() operation when the stack is implemented using an array?",O(1),O(n),O(logn),O(nlogn),d
+" Which of the following array position will be occupied by a new element being pushed for a stack of size N elements(capacity of stack > N)?",S[N-1] ,S[N] ,S[1] ,S[0] ,a
+" What happens when you pop from an empty stack while implementing using the Stack ADT in Java?",Undefined error,Compiler displays a warning,EmptyStackException is thrown,NoStackException is thrown,a
+" To implement a stack using queue(with only enqueue and dequeue operations), how many queues will you need?",1,2,3,4,a
+" 2-3 tree is a specific form of _________",B � tree,B+ � tree,AVL tree,Heap,c
+" Which of the following is the 2-3 tree?",,,,,d
+" The height of 2-3 tree with n elements is ______",between (n/2) and (n/3),(n/6),between (n) and log2(n + 1),between log3(n + 1) and log2(n + 1),b
+" Which of the following the BST is isometric with the 2-3 tree?",Splay tree,AA tree,Heap,Red � Black tree,c
+" The figure shown below is a 2-3 tree. What is the result of deleting 110 from the tree?
+",,,,,d
+" Which of the following data structure can provide efficient searching of the elements?",unordered lists,binary search tree,treap,2-3 tree,a
+" Which of the following is not true about the 2-3 tree?",all leaves are at the same level,it is perfectly balanced,postorder traversal yields elements in sorted order,it is B-tree of order 3,b
+" AA Trees are implemented using?",Colors,Levels,Node size,Heaps,a
+" Which of the following is the correct definition for a horizontal link?",connection between node and a child of equal levels,connection between two nodes,connection between two child nodes,connection between root node and leaf node,a
+" How will you remove a left horizontal link in an AA-tree?",by performing right rotation,by performing left rotation,by deleting both the elements,by inserting a new element,b
+" What are the two different operations done in an AA-Tree?",shift and color,skew and split,zig and zag,enqueue and dequeue,b
+" How many different shapes does maintenance of AA-Tree need to consider?",7,5,2,3,a
+" What is the prime condition of AA-tree which makes it simpler than a red-black tree?",Only right children can be red,Only left children can be red,Right children should strictly be black,There should be no left children,d
+" Which of the following trees is similar to that of an AA-Tree?",Splay Tree,B+ Tree,AVL Tree,Red-Black Tree,b
+" What is the worst case analysis of an AA-Tree?",O(N),O(log N),O( N log N),O(N2),a
+" Who is the inventor of AA-Tree?",Arne Anderson,Daniel Sleator,Rudolf Bayer,Jon Louis Bentley,c
+" What should be the condition for the level of a left node?",It should be less than or equal to that of its parent,It should be greater than that of its parent,It should be strictly less than that of its parent,The level should be equal to one,d
+" Of the following rules that are followed by an AA-tree, which of the following is incorrect?
+1- Only right children can be red
+2- Procedures are coded recursively
+3- Instead of storing colors, the level of a node is stored
+4- There should not be any left children",1,2,3,4,b
+" In the given figure, find �?�.
+",left rotation,right rotation,insertion,deletion,a
+" What is an AVL tree?",a tree which is balanced and is a height balanced tree,a tree which is unbalanced and is a height balanced tree,a tree with three children,a tree with atmost 3 children,a
+" Why we need to a binary tree which is height balanced?",to avoid formation of skew trees,to save memory,to attain faster memory access,to simplify storing,b
+" Which of the below diagram is following AVL tree property?
+ i.
+ii.",only i,only i and ii,only ii,i is not a binary search tree,b
+" Which of the following is true?",B + tree allows only the rapid random access,B + tree allows only the rapid sequential access,B + tree allows rapid random access as well as rapid sequential access,B + tree allows rapid random access and slower sequential access,b
+" A B+ tree can contain a maximum of 7 pointers in a node. What is the minimum number of keys in leaves?",6,3,4,7,a
+" Which of the following is false?",A B+ -tree grows downwards,A B+ -tree is balanced,"In a B+ -tree, the sibling pointers allow sequential searching",B+ -tree is shallower than B-tree,b
+" A B+ -tree of order 3 is generated by inserting 89, 9 and 8. The generated B+ -tree is __________",,,,,a
+" Statement 1: When a node is split during insertion, the middle key is promoted to the parent as well as retained in right half-node.
+Statement 2: When a key is deleted from the leaf, it is also deleted from the non-leaf nodes of the tree.",Statement 1 is true but statement 2 is false,Statement 2 is true but statement 1 is false,Both the statements are true,Both the statements are false,d
+" Efficiency of finding the next record in B+ tree is ____",O(n),O(log n),O(nlog n),O(1),d
+" What is the maximum number of keys that a B+ -tree of order 3 and of height 3 have?",3,80,27,26,c
+" Which of the following is false?","Compared to B-tree, B+ -tree has larger fanout",Deletion in B-tree is more complicated than in B+ -tree,B+ -tree has greater depth than corresponding B-tree,Both B-tree and B+ -tree have same search and insertion efficiencies,c
+" Which of the following is the most widely used external memory data structure?",AVL tree,B-tree,Red-black tree,Both AVL tree and Red-black tree,d
+" B-tree of order n is a order-n multiway tree in which each non-root node contains __________",at most (n � 1)/2 keys,exact (n � 1)/2 keys,at least 2n keys,at least (n � 1)/2 keys,a
+" A B-tree of order 4 and of height 3 will have a maximum of _______ keys.",255,63,127,188,c
+" Five node splitting operations occurred when an entry is inserted into a B-tree. Then how many nodes are written?",14,7,11,5,a
+" 2-3-4 trees are B-trees of order 4. They are an isometric of _____ trees.",AVL,AA,2-3,Red-Black,c
+" Figure shown below is B-tree of order 5. What is the result of deleting 130 from the tree?
+",,,,,a
+" What is the best case height of a B-tree of order n and which has k keys?",logn (k+1) � 1,nk,logk (n+1) � 1,klogn,a
+" What will be the height of a balanced full binary tree with 8 leaves?",8,5,6,4,c
+" The balance factor of a node in a binary tree is defined as _____",addition of heights of left and right subtrees,height of right subtree minus height of left subtree,height of left subtree minus height of right subtree,height of right subtree minus one,b
+" Figure below is a balanced binary tree. If a node inserted as child of the node R, how many nodes will become unbalanced?
+",2,1,3,0,a
+" A binary tree is balanced if the difference between left and right subtree of every node is not more than ____",1,3,2,0,d
+" Which of the following tree data structures is not a balanced binary tree?",AVL tree,Red-black tree,Splay tree,B-tree,b
+" Which of following figures is a balanced binary tree?",,,,,a
+" Balanced binary tree with n items allows the lookup of an item in ____ worst-case time.",O(log n),O(nlog 2),O(n),O(1),d
+" Which of the following data structures can be efficiently implemented using height balanced binary search tree?",sets,priority queue,heap,both sets and priority queue,a
+" Two balanced binary trees are given with m and n elements respectively. They can be merged into a balanced binary search tree in ____ time.",O(m+n),O(mn),O(m),O(mlog n),a
+" Which of the following is an advantage of balanced binary search tree, like AVL tree, compared to binary heap?",insertion takes less time,deletion takes less time,searching takes less time,construction of the tree takes less time than binary heap,a
+" What is the space complexity of searching in a heap?",O(logn),O(n),O(1),O(nlogn),d
+" What is the best case complexity in building a heap?",O(nlogn),O(n2),O(n*longn *logn),O(n),a
+" What is the location of a parent node for any arbitary node i?",(i/2) position,(i+1)/ position,floor(i/2) position,ceil(i/2) position,a
+" Which of the following is false about a binary search tree?",The left child is always lesser than its parent,The right child is always greater than its parent,The left and right sub-trees should also be binary search trees,In order sequence gives decreasing order of elements,a
+" What is the speciality about the inorder traversal of a binary search tree?",It traverses in a non increasing order,It traverses in an increasing order,It traverses in a random fashion,It traverses based on priority of the node,c
+" What is the maximum number of children that a binary tree node can have?",0,1,2,3,a
+" How many common operations are performed in a binary tree?",1,2,3,4,b
+" What is the traversal strategy used in the binary tree?",depth-first traversal,breadth-first traversal,random traversal,Priority traversal,b
+" How many types of insertion are performed in a binary tree?",1,2,3,4,c
+" How many bits would a succinct binary tree occupy?",n+O(n),2n+O(n),n/2,n,d
+" The number of edges from the root to the node is called __________ of the tree.",Height,Depth,Length,Width,a
+" The number of edges from the node to the deepest leaf is called _________ of the tree.",Height,Depth,Length,Width,a
+" What is a full binary tree?",Each node has exactly zero or two children,Each node has exactly two children,All the leaves are at the same level,Each node has exactly one or two children,c
+" What is a complete binary tree?",Each node has exactly zero or two children,"A binary tree, which is completely filled, with the possible exception of the bottom level, which is filled from right to left","A binary tree, which is completely filled, with the possible exception of the bottom level, which is filled from left to right",A tree In which all nodes have degree 2,d
+" What is the average case time complexity for finding the height of the binary tree?",h = O(loglogn),h = O(nlogn),h = O(n),h = O(log n),d
+" Which of the following is not an advantage of trees?",Hierarchical structure,Faster search,Router algorithms,Undo/Redo operations in a notepad,b
+" In a full binary tree if number of internal nodes is I, then number of leaves L are?",L = 2*I,L = I + 1,L = I � 1,L = 2*I � 1,d
+" In a full binary tree if number of internal nodes is I, then number of nodes N are?",N = 2*I,N = I + 1,N = I � 1,N = 2*I + 1,d
+" In a full binary tree if there are L leaves, then total number of nodes N are?",N = 2*L,N = L + 1,N = L � 1,N = 2*L � 1,d
+" How many children does a binary tree have?",2,any number of children,0 or 1 or 2,0 or 1,c
+" What is/are the disadvantages of implementing tree using normal arrays?",difficulty in knowing children nodes of a node,difficult in finding the parent of a node,have to know the maximum number of nodes possible before creation of trees,difficult to implement,a
+" What must be the ideal size of array if the height of tree is �l�?",2l-1,l-1,l,2l,a
+" What are the children for node �w� of a complete-binary tree in an array representation?",2w and 2w+1,2+w and 2-w,w+1/2 and w/2,w-1/2 and w+1/2,a
+" What is the parent for a node �w� of a complete binary tree in an array representation when w is not 0?",floor(w-1/2),ceil(w-1/2),w-1/2,w/2,a
+" If the tree is not a complete binary tree then what changes can be made for easy access of children of a node in the array?",every node stores data saying which of its children exist in the array,"no need of any changes continue with 2w and 2w+1, if node is at i",keep a seperate table telling children of a node,use another array parallel to the array with tree,a
+" Advantages of linked list representation of binary trees over arrays?",dynamic size,ease of insertion/deletion,ease in randomly accessing a node,both dynamic size and ease in insertion/deletion,d
+" Disadvantages of linked list representation of binary trees over arrays?",Randomly accessing is not possible,Extra memory for a pointer is needed with every element in the list,Difficulty in deletion,Random access is not possible and extra memory with every element,d
+" Which of the following traversing algorithm is not used to traverse in a tree?",Post order,Pre order,Post order,Randomized,a
+" Level order traversal of a tree is formed with the help of",breadth first search,depth first search,dijkstra�s algorithm,prims algorithm,d
+" Identify the reason which doesn�t play a key role to use threaded binary trees?",The storage required by stack and queue is more,The pointers in most of nodes of a binary tree are NULL,It is Difficult to find a successor node,They occupy less size,d
+" What may be the psuedo code for finding the size of a tree?",find_size(root_node�>left_node) + 1 + find_size(root_node�>right_node),find_size(root_node�>left_node) + find_size(root_node�>right_node),find_size(root_node�>right_node) � 1,find_size(root_node�>left_node + 1,a
+" What is a Cartesian tree?",a skip list in the form of tree,a tree which obeys cartesian product,a tree which obeys heap property and whose inorder traversal yields the given sequence,a tree which obeys heap property only,a
+" Which of the below statements are true?
+i. Cartesian tree is not a height balanced tree
+ii. Cartesian tree of a sequence of unique numbers can be unique generated",both statements are true,only i. is true,only ii. is true,both are false,a
+" What is the speciality of cartesian sorting?",it sorts partially sorted set of data quickly,it considers cartesian product of elements,it sorts elements in less than O(logn),it is a self balancing tree,a
+" Consider a sequence of numbers to have repetitions, how a cartesian tree can be constructed in such situations without violating any rules?",use any tie-breaking rule between repeated elements,cartesian tree is impossible when repetitions are present,construct a max heap in such cases,construct a min heap in such cases,b
+" What happens if we apply the below operations on an input sequence?
+i. construct a cartesian tree for input sequence
+ii. put the root element of above tree in a priority queue
+iii. if( priority queue is not empty) then
+iv. search and delete minimum value in priority queue
+v. add that to output
+vi. add cartesian tree children of above node to priority queue",constructs a cartesian tree,sorts the input sequence,does nothing,produces some random output,c
+" Cartesian trees are most suitable for?",searching,finding nth element,minimum range query and lowest common ancestors,self balancing a tree,a
+" A treap is a cartesian tree with ___________","additional value, which is a priority value to the key generated randomly","additional value, which is a priority value to the key generated sequentially",additional heap rule,additional operations like remove a range of elements,a
+" What is the other name for a postfix expression?",Normal polish Notation,Reverse polish Notation,Warsaw notation,Infix notation,b
+" Which of the following is an example for a postfix expression?",a*b(c+d),abc*+de-+,+ab,a+b-c,b
+" What is the time complexity of evaluation of postfix expression algorithm?",O (N),O (N log N),O (N2),O (M log N),a
+" Which of these operators have the highest order of precedence?",�(� and �)�,�*� and �/�,�~� and �^�,�+� and �-�,d
+" Which of the following is not an application of stack?"," evaluation of postfix expression"," conversion of infix to postfix expression"," balancing symbols"," line at ticket counter",b
+" While evaluating a postfix expression, when an operator is encountered, what is the correct operation to be performed?",push it directly on to the stack,"pop 2 operands, evaluate them and push the result on to the stack",pop the entire stack,ignore the operator,a
+" Which of the following statement is incorrect?",Postfix operators use value to their right,Postfix operators use value to their left,Prefix operators use value to their right,"In postfix expression, operands are followed by operators",d
+" What is the result of the given postfix expression?  abc*+ where a=1, b=2, c=3.",4,5,6,7,a
+" What is the result of the following postfix expression?
+  ab*cd*+ where a=2,b=2,c=3,d=4.",16,12,14,10,a
+" Consider the stack
+| 5 |
+| 4 |
+| 3 |
+| 2 |.
+At this point, �*� is encountered. What has to be done?",5*4=20 is pushed into the stack,* is pushed into the stack,2*3=6 is pushed into the stack,* is ignored,c
+" Evaluate the postfix expression ab + cd/- where a=5, b=4, c=9, d=3.",23,15,6,10,b
+" Evaluate and write the result for the following postfix expression
+   abc*+de*f+g*+ where a=1, b=2, c=3, d=4, e=5, f=6, g=2.",61,59,60,55,a
+" How many stacks are required for evaluation of prefix expression?",one,two,three,four,b
+" While evaluating a prefix expression, the string is read from?",left to right,right to left,center to right,center to left to right,a
+" How many types of input characters are accepted by this algorithm?",one,two,three,four,a
+" What determines the order of evaluation of a prefix expression?",precedence and associativity,precedence only,associativity only,depends on the parser,a
+" Using the evaluation of prefix algorithm, evaluate +-9 2 7.",10,4,17,14,c
+" How many stacks are required for applying evaluation of infix expression algorithm?",one,two,three,four,a
+" How many passes does the evaluation of infix expression algorithm makes through the input?",One,Two,Three,Four,a
+" Identify the infix expression from the list of options given below.",a/b+(c-d),abc*+d+ab+cd+*ce-f-,ab-c-,+ab,b
+" Which of the following statement is incorrect with respect to evaluation of infix expression algorithm?",Operand is pushed on to the stack,"If the precedence of operator is higher, pop two operands and evaluate","If the precedence of operator is lower, pop two operands and evaluate",The result is pushed on to the operand stack,c
+" Evaluate the following statement using infix evaluation algorithm and choose the correct answer. 1+2*3-2",3,6,5,4,a
+" Of the following choices, which operator has the lowest precedence?",^,+,/,#,b
+" Evaluate the following and choose the correct answer.
+a/b+c*d where a=4, b=2, c=2, d=1.",1,4,5,2,a
+" Evaluate the following statement using infix evaluation algorithm and choose the correct answer. 4*2+3-5/5",10,11,16,12,d
+" Using the evaluation of infix expression, evaluate a^b+c  and choose the correct answer. (a=2, b=2, c=2)",12,8,10,6,a
+" Evaluate the following infix expression using algorithm and choose the correct answer. a+b*c-d/e^f  where a=1, b=2, c=3, d=4, e=2, f=2.",6,8,9,7,c
+" The leaves of an expression tree always contain?",operators,operands,null,expression,a
+" What does the other nodes of an expression tree(except leaves) contain?",only operands,only operators,both operands and operators,expression,c
+" An expression tree is a kind of?",Binary search tree,Fibonacci tree,Binary tree,Treap,b
+" The expression obtained by recursively producing a left expression, followed by an operator, followed by recursively producing a right expression is called?",prefix expression,infix expression,postfix expression,paranthesized expression,d
+" When an operand is read, which of the following is done?",It is placed on to the output,It is placed in operator stack,It is ignored,Operator stack is emptied,c
+" What should be done when a left parenthesis �(� is encountered?",It is ignored,It is placed in the output,It is placed in the operator stack,The contents of the operator stack is emptied,a
+" Which of the following is an infix expression?",(a+b)*(c+d),ab+c*,+ab,abc+*,b
+" What is the time complexity of an infix to postfix conversion algorithm?",O(N log N),O(N),O(N2),O(M log N),a
+" Which of the following statement is incorrect with respect to infix to postfix conversion algorithm?",operand is always placed in the output,operator is placed in the stack when the stack operator has lower precedence,parenthesis are included in the output,higher and equal priority operators follow the same condition,c
+" In infix to postfix conversion algorithm, the operators are associated from?",right to left,left to right,centre to left,centre to right,b
+" What data structure is used when converting an infix notation to prefix notation?",Stack,Queue,B-Trees,Linked-list,c
+" Out of the following operators (^, *, +, &, $), the one having highest priority is _________",+,$,^,&,b
+" Out of the following operators (|, *, +, &, $), the one having lowest priority is ________",+,$,|,&,a
+" For the tree below, write the in-order traversal.
+","6, 2, 5, 7, 11, 2, 5, 9, 4","6, 5, 2, 11, 7, 4, 9, 5, 2","2, 7, 2, 6, 5, 11, 5, 9, 4","2, 7, 6, 5, 11, 2, 9, 5, 4",b
+" For the tree below, write the level-order traversal.
+","2, 7, 2, 6, 5, 11, 5, 9, 4","2, 7, 5, 2, 11, 9, 6, 5, 4","2, 5, 11, 6, 7, 4, 9, 5, 2","2, 7, 5, 6, 11, 2, 5, 4, 9",b
+" How many child nodes does each node of K-ary Tree contain?",2,3,more than k,at most k,d
+" Which of the following is the name of the node having child nodes?",Brother,Sister,Mother,Parent,c
+" What is the depth of the root node of K-ary tree?",2,1,0,3,d
+" What is the Height of the root node of K-ary tree?",1,2,3,0,a
+" Which node is the root node of the following K-ary tree?
+",A,B,C,D,d
+" Which node is the Leaf node in the following K-ary tree?
+",A,B,D,F,c
+" Which node is the parent node of Node 5?
+",1,5,2,3,a
+" Which node is the child node of Node C in the following K-ary tree?
+",A,C,G,H,d
+" Which node is the child node of the Node B in the following K-ary tree?
+",A,C,B,No child node,c
+" What is the depth of Node F in the given K-ary tree?
+",0,1,2,3,c
+" What is the size of the given K-ary tree?
+",3,2,6,4,a
+" Who is the ancestor of Node H?
+",D,F,H,A,d
+" Who is descendant of Node C?
+",A,E,D,G,a
+" What is the size of Node B in given K-ary tree?
+",1,2,3,4,a
+" What is the upper bound for maximum leaves in K-ary tree with height h?",K*h,K^h,K+h,K-h,b
+" What is the height of a K-ary tree having only root node?",1,0,2,3,a
+" Which one of the following is the correct formulae to find the parent node at index I?",(I-1)/K,(I+1)/K,(I*1)/K,(I-2)/K,d
+" Which nodes are the siblings of Node D of given ternary tree?
+",E,C,F,H,d
+" How many extra nodes are there in Full K-ary tree than complete K-ary tree?",1,2,3,Both have same number of nodes,b
+" In what time can a 2-d tree be constructed?",O(N),O(N log N),O(N2),O(M log N),a
+" In a two-dimensional search tree, the root is arbitrarily chosen to be?",even,odd,depends on subtrees,1,d
+" Which of the following is the simplest data structure that supports range searching?",Heaps,binary search trees,AA-trees,K-d trees,a
+" In a k-d tree, k originally meant?",number of dimensions,size of tree,length of node,weight of node,c
+" What will be the correct sequence of insertion for the following k-d tree?
+","(30,40),(5,25),(70,70),(10,12),(50,30),(35,45)","(40,30),(5,25),(12,10),(70,70),(30,50),(45,35)","(30,40),(5,25),(10,12),(70,70),(50,30),(35,45)","(40,30),(25,5),(12,10),(70,70),(50,30),(45,35)",b
+" Each level in a k-d tree is made of?",dimension only,cutting and dimension,color code of node,size of the level,a
+" What is the worst case of finding the nearest neighbour?",O(N),O(N log N),O( log N),O(N3),c
+" What is the run time of finding the nearest neighbour in a k-d tree?",O(2+ log N),O( log N),O(2d log N),O( N log N),c
+" How many prime concepts are available in nearest neighbour search in a kd tree?",1,2,3,4,a
+" Reducing search space by eliminating irrelevant trees is known as?",pruning,partial results,freeing space,traversing,b
+" Several kinds of queries are possible on a k-d called as?",partial queries,range queries,neighbour queries,search queries,c
+" Which of the following data structure is used to convert postfix expression to infix expression?",Stack,Queue,Linked List,Heap,c
+" The postfix expression abc+de/*- is equivalent to which of the following infix expression?",abc+-de*/,(a+b)-d/e*c,a-(b+c)*(d/e),abc+*-(d/e),d
+" The equivalent infix expression and value for the postfix form 1 2 + 3 * 4 5 * � will be ___________",1 + 2 * 3 � 4 * 5 and -13,(2 + 1) * (3 � 4) * 5 and 13,1 + 2 * (3 � 4) * 5 and -11,(1 + 2) * 3 � (4 * 5) and -11,d
+" What is the value of the postfix expression  2 3 + 4 5 6 � � *",19,21,-4,25,d
+" The prefix expression of the postfix expression AB+CD-* is __________",(A+B)*(C-D),+AB*-CD,A+*BCD-,*+AB-CD,c
+" Consider the postfix expression 4 5 6 a b 7 8 a c, where a, b, c are operators. Operator a has higher precedence over operators b and c. Operators b and c are right associative. Then, equivalent infix expression is",4 a 5 6  b 7 8 a c,4 a 5 c 6 b 7 a 8,4 b 5 a 6 c 7 a 8,4 a 5 b 6 c 7 a 8,a
+" Which of the following is valid reverse polish expression?",a op b,op a b,a b op,both op a b and a b op,b
+" What is the possible number of binary trees that can be created with 3 nodes, giving the sequence N, M, L when traversed in post-order.",15,3,5,8," "
+" The post-order traversal of a binary tree is O P Q R S T. Then possible pre-order traversal will be ________",T Q R S O P,T O Q R P S,T Q O P S R,T Q O S P R,d
+" A binary search tree contains values 7, 8, 13, 26, 35, 40, 70, 75. Which one of the following is a valid post-order sequence of the tree provided the pre-order sequence as 35, 13, 7, 8, 26, 70, 40 and 75?","7, 8, 26, 13, 75, 40, 70, 35","26, 13, 7, 8, 70, 75, 40, 35","7, 8, 13, 26, 35, 40, 70, 75","8, 7, 26, 13, 40, 75, 70, 35",b
+" Which of the following pair�s traversals on a binary tree can build the tree uniquely?",post-order and pre-order,post-order and in-order,post-order and level order,level order and preorder,a
+" A full binary tree can be generated using ______",post-order and pre-order traversal,pre-order traversal,post-order traversal,in-order traversal,b
+" The maximum number of nodes in a tree for which post-order and pre-order traversals may be equal is ______",3,1,2,any number,b
+" The pre-order and in-order are traversals of a binary tree are T M L N P O Q and L M N T O P Q. Which of following is post-order traversal of the tree?",L N M O Q P T,N M O P O L T,L M N O P Q T,O P L M N Q T,b
+" For the tree below, write the pre-order traversal.
+","2, 7, 2, 6, 5, 11, 5, 9, 4","2, 7, 5, 2, 6, 9, 5, 11, 4","2, 5, 11, 6, 7, 4, 9, 5, 2","2, 7, 5, 6, 11, 2, 5, 4, 9",c
+" For the tree below, write the post-order traversal.
+","2, 7, 2, 6, 5, 11, 5, 9, 4","2, 7, 5, 2, 6, 9, 5, 11, 4","2, 5, 11, 6, 7, 4, 9, 5, 2","2, 7, 5, 6, 11, 2, 5, 4, 9",a
+" Which of the following is not a random tree?",Treap,Random Binary Tree,Uniform Spanning Tree,AVL Tree,a
+" Which process forms the randomized binary search tree?",Stochastic Process,Branching Process,Diffusion Process,Aggregation Process,d
+" How many randomized binary search trees can be formed by the numbers (1, 3, 2)?",2,3,6,5,d
+" What is the expected depth of a node in a randomized binary search tree?",log n,n!,n2,2 log n + O(1),d
+" What is the longest length path for a node x in random binary search tree for the insertion process?",log x,x2,x!,4.311 log x,d
+" What is the special property of red-black trees and what root should always be?",a color which is either red or black and root should always be black color only,height of the tree,pointer to next node,a color which is either green or black,a
+" Why do we impose restrictions like
+ . root property is black
+ . every leaf is black
+ . children of red node are black
+ . all leaves have same black",to get logarithm time complexity,to get linear time complexity,to get exponential time complexity,to get constant time complexity,a
+" Cosider the below formations of red-black tree.
+
+   All the above formations are incorrect for it to be a redblack tree. then what may be the correct order?","50-black root, 18-red left subtree, 100-red right subtree","50-red root, 18-red left subtree, 100-red right subtree","50-black root, 18-black left subtree, 100-red right subtree","50-black root, 18-red left subtree, 100-black right subtree",a
+" What are the operations that could be performed in O(logn) time complexity by red-black tree?","insertion, deletion, finding predecessor, successor",only insertion,"only finding predecessor, successor",for sorting,c
+" Which of the following is an application of Red-black trees and why?",used to store strings efficiently,used to store integers efficiently,"can be used in process schedulers, maps, sets",for efficient sorting,a
+" When it would be optimal to prefer Red-black trees over AVL trees?",when there are more insertions or deletions,when more search is needed,when tree must be balanced,when log(nodes) time complexity is needed,b
+" Why Red-black trees are preferred over hash tables though hash tables have constant time complexity?",no they are not preferred,because of resizing issues of hash table and better ordering in redblack trees,because they can be implemented using trees,because they are balanced,a
+" How can you save memory when storing color information in Red-Black tree?",using least significant bit of one of the pointers in the node for color information,using another array with colors of each node,storing color information in the node structure,using negative and positive numbering,a
+" When to choose Red-Black tree, AVL tree and B-trees?","many inserts, many searches and when managing more items respectively","many searches, when managing more items respectively and many inserts respectively","sorting, sorting and retrieval respectively","retrieval, sorting and retrieval respectively",a
+" Which of the following is not the self balancing binary search tree?",AVL Tree,2-3-4 Tree,Red � Black Tree,Splay Tree,a
+" The binary tree sort implemented using a self � balancing binary search tree takes ______ time is worst case.",O(n log n),O(n),O(n2),O(log n),b
+"  An AVL tree is a self � balancing binary search tree, in which the heights of the two child sub trees of any node differ by _________",At least one,At most one,Two,At most two,d
+" Associative arrays can be implemented using __________",B-tree,A doubly linked list,A single linked list,A self balancing binary search tree,b
+" Which of the following is a self � balancing binary search tree?",2-3 tree,Threaded binary tree,AA tree,Treap,a
+" A self � balancing binary search tree can be used to implement ________",Priority queue,Hash table,Heap sort,Priority queue and Heap sort,c
+" In which of the following self � balancing binary search tree the recently accessed element can be accessed quickly?",AVL tree,AA tree,Splay tree,Red � Black tree,a
+" The minimum height of self balancing binary search tree with n nodes is _____",log2(n),n,2n + 1,2n � 1,a
+" What are splay trees?",self adjusting binary search trees,self adjusting binary trees,a tree with strings,a tree with probability distributions,b
+" Which of the following property of splay tree is correct?",it holds probability usage of the respective sub trees,"any sequence of j operations starting from an empty tree with h nodes atmost, takes O(jlogh) time complexity",sequence of operations with h nodes can take O(logh) time complexity,splay trees are unstable trees,c
+" Why to prefer splay trees?",easier to program,space efficiency,easier to program and faster access to recently accessed items,quick searching,a
+" What is a splay operation?",moving parent node to down of child,moving a node to root,moving root to leaf,removing leaf node,a
+" Which of the following options is an application of splay trees?",cache Implementation,networks,send values,receive values,b
+" When we have red-black trees and AVL trees that can perform most of operations in logarithmic times, then what is the need for splay trees?",no there is no special usage,"In real time it is estimated that 80% access is only to 20% data, hence most used ones must be easily available",redblack and avl are not upto mark,they are just another type of self balancing binary search trees,a
+" What is the other name for Suffix Tree?",Array,Stack,Priority Queue,PAT Tree,b
+" Which tree allows fast implementation of string operation?",Rope Tree,Suffix Tree,Tango Tree,Top Tree,d
+" How much time does construction of suffix tree take?",O (log M),O (M!),Exponential to Length of Tree,Linear to Length of Tree,d
+" How much space does construction of suffix tree takes?",O (log M),Exponential to Length of Tree,O (M!),Linear to Length of Tree,b
+" Which tree provides a linear time solution for substring operation?",Rope Tree,Suffix Tree,Tango Tree,Top Tree,a
+" Who proposed the concept of Suffix Tree?",Weiner,Samuel F. B. Morse,Friedrich Clemens Gerke,Alexander Morse,c
+" Who among the following provided the first online contribution of Suffix Tree?",Weiner,Samuel F. B. Morse,Ukkonen,Alexander Morse,d
+" What is the time complexity of Uttkonen�s algorithm?",O (log n!),O (n!),O (n2),O (n log n),b
+" Who among the following provided the first suffix tree contribution for all alphabet?",Weiner,Farach,Ukkonen,Alexander Morse,b
+" Who among the following algorithm is used in external memory and compression of the suffix tree?",Weiner�s algorithm,Farach�s algorithm,Ukkonen�s algorithm,Alexander Morse,a
+" Which statement is correct of suffix tree with a string of length n?",The tree has n leaves.,The tree has n roots,Height of Tree is n,Depth of tree is n,b
+" Which tree allows fast implementation of a set of string operation?",Rope Tree,Tango Tree,Generalized Suffix Tree,Top Tree,d
+" Who developed the concept of tango tree?",Erik Demaine,Mihai Patrascu,John Lacono,All of the mentioned,c
+" Which type of tree is tango tree?",Ternary Tree,AVL Tree,Binary Search Tree,K-ary Tree,b
+" After which city is tango tree named?",Vatican City,Buenos Aires,New York,California,d
+" Which type of binary search tree or algorithm does tango tree use?",Online,Offline,Static,Dynamic,d
+" What is the time complexity of for achieving competitive ratio by tango tree?",O (log n),O (n2),O (n!),O (log (log n)),a
+" Which type of binary search tree is imitated for construction of tango tree?",Complete Binary Search Tree,Perfect Binary Search Tree,Balanced Binary Search Tree,Degenerate Binary Search Tree,a
+" Which special balanced binary search tree is used to store the nodes of auxiliary tree?",Red � Black Tree,Red � Brown Tree,Red � Yellow Tree,Red � Tango Tree,a
+" Which operation is used to combine two auxiliary trees?",Join,Combinatorial,Add,Concatenation,a
+" Which operation is used to break a preferred path into two sets of parts at a particular node?",Differentiate,Cut,Integrate,Join,d
+" What is the upper bound for a tango tree if k is a number of interleaves?",k+2 O (log (log n)),k O (log n),K2 O (log n),k+1 O (log (log n)),d
+" What is the time complexity for searching k+1 auxiliary trees?",k+2 O (log (log n)),k+1 O (log n),K+2 O (log n),k+1 O (log (log n)),d
+" What is the time complexity for the update cost on auxiliary trees?",O (log (log n)),k-1 O (log n),K2 O (log n),k+1 O (log (log n)),b
+" What is the smallest element of the given minimum ternary heap?
+",1,10,18,20,a
+" What is the highest element of the given maximum ternary heap?
+",31,10,18,20,b
+" What is the child of smallest element of the given minimum ternary heap?
+",1,10,22,24,c
+" What are the siblings of smallest element of the given maximum ternary heap?
+",31,12,18,22,a
+" What is the height of a given minimum ternary heap?
+",1,10,2,24,a
+" What is the ancestor of the leaf node in a given minimum ternary heap?
+",1,10,18,20,d
+" Which property should ternary heap hold for execution?",Associative,Commutative,Tree,Heap,a
+" What is the process of building a ternary heap called?",Heapify,Hashing,Linking,Merging,c
+" Which type of data structure is a ternary heap?",Array,Hash,Priority Queue,Priority Stack,a
+" What is a ternary heap?",An array with three elements,Linked list with three elements,Tree with three children,Heap with all nodes having three children,c
+" How many extra nodes are there in Full ternary tree than a complete ternary tree?",1,2,3,Both have same number of nodes,b
+" What is the time complexity for inserting a new item in a ternary heap of n elements?",O (log n/ log 3),O (n!),O (n),O (1),a
+" What is the time complexity for decreasing priority of key in a minimum ternary heap of n elements?",O (log n/ log 3),O (n!),O (n),O (1),a
+" What is the time complexity for increasing priority of key in a maximum ternary heap of n elements?",O (log n/ log 3),O (n!),O (n),O (1),b
+" What is the time complexity for deleting root key in a ternary heap of n elements?",O (log n/ log 3),O (3log n/ log 3),O (n),O (1),b
+" What is the time complexity for increasing priority of key in a minimum ternary heap of n elements?",O (log n/ log 3),O (3log n/ log 3),O (n),O (1),b
+" What is the time complexity for decreasing priority of key in a maximum ternary heap of n elements?",O (log n/ log 3),O (3log n/ log 3),O (n),O (1),a
+" What is the time complexity for creating a ternary heap using swapping?",O (log n/ log 3),O (n!),O (n),O (1),a
+" How many child nodes does each node of Ternary Tree contain?",4,6,5,3,d
+" Which of the following is the name of the node having child nodes?",Brother,Sister,Mother,Parent,c
+" What is the depth of the root node of the ternary tree?",2,1,0,3,d
+" What is the Height of the root node of ternary tree?",1,2,3,0,a
+" What is a threaded binary tree traversal?",a binary tree traversal using stacks,a binary tree traversal using queues,a binary tree traversal using stacks and queues,a binary tree traversal without using stacks and queues,a
+" What are the disadvantages of normal binary tree traversals?",there are many pointers which are null and thus useless,there is no traversal which is efficient,complexity in implementing,improper traversals,a
+" In general, the node content in a threaded binary tree is ________","leftchild_pointer, left_tag, data, right_tag, rightchild_pointer","leftchild_pointer, left_tag","leftchild_pointer, left_tag, right_tag, rightchild_pointer","leftchild_pointer, left_tag, data",a
+" What are null nodes filled with in a threaded binary tree?",inorder predecessor for left node and inorder successor for right node information,right node with inorder predecessor and left node with inorder successor information,they remain null,some other values randomly,a
+" Which of the following tree traversals work if the null left pointer pointing to the predecessor and null right pointer pointing to the successor in a binary tree?","inorder, postorder, preorder traversals",inorder,postorder,preorder,a
+" What are double and single threaded trees?","when both left, right nodes are having null pointers and only right node is null pointer respectively",having 2 and 1 node,using single and double linked lists,using heaps and priority queues,a
+" Which algorithm is used in the top tree data structure?",Divide and Conquer,Greedy,Backtracking,Branch,d
+" For how many vertices in a set, is top tree defined for underlying tree?",3,4,5,2,a
+" How many edges are present in path cluster?",2,3,6,1,a
+" How many edges does a leaf cluster contain?",0,1,2,3,b
+" How many edges are present in Edge cluster?",0,1,2,4,a
+" Which data structure is used to maintain a dynamic forest using a link or cut operation?",Top Tree,Array,Linked List,Stack,a
+" What is the time complexity for the initialization of top tree?",O (n),O (n2),O (log n),O (n!),a
+" How many top trees are there in a tree with single vertex?",0,1,2,3,d
+" Which property makes top tree a binary tree?",Nodes as Cluster,Leaves as Edges,Root is Tree Itself,All of the mentioned,d
+" Which of the dynamic operations are used in Top Tree data structure implementation?",Link,Cut,Expose,All of the mentioned,a
+" Which of the following are used as an internal operation in Top tree?",Merge,Cut,Expose,Link,c
+" Trie is also known as _________",Digital Tree,Treap,Binomial Tree,2-3 Tree,c
+" What traversal over trie gives the lexicographical sorting of the set of the strings?",postorder,preorders,inorder,level order,d
+" Which of the following is the efficient data structure for searching words in dictionaries?",BST,Linked List,Balancded BST,Trie,c
+" Which of the following special type of trie is used for fast searching of the full texts?",Ctrie,Hash tree,Suffix tree,T tree,a
+" Which of the following is not true?",Trie requires less storage space than hashing,Trie allows listing of all the words with same prefix,Tries are collision free,Trie is also known as prefix tree,d
+" A program to search a contact from phone directory can be implemented efficiently using ______",a BST,a trie,a balanced BST,a binary tree,b
+" What can be the maximum depth of the trie with n strings and m as the maximum sting the length?",log2n,log2m,n,m,a
+" What is a weight balanced tree?",A binary tree that stores the sizes of subtrees in nodes,A binary tree with an additional attribute of weight,A height balanced binary tree,A normal binary tree,a
+" What are the applications of weight balanced tree?","dynamic sets, dictionaries, sequences, maps",heaps,sorting,storing strings,a
+" A node of the weight balanced tree has","key, left and right pointers, size","key, value","key, size",key,a
+" What is the condition for a tree to be weight balanced. where a is factor and n is a node?",weight[n.left] >= a*weight[n] and weight[n.right] >= a*weight[n].,weight[n.left] >= a*weight[n.right] and weight[n.right] >= a*weight[n].,weight[n.left] >= a*weight[n.left] and weight[n.right] >= a*weight[n].,weight[n] is a non zero,a
+" What are the operations that can be performed on weight balanced tree?","all basic operations and set intersection, set union and subset test",all basic operations,"set intersection, set union and subset test",only insertion and deletion,d
+" Consider a weight balanced tree such that, the number of nodes in the left sub tree is at least half and at most twice the number of nodes in the right sub tree. The maximum possible height (number of nodes on the path from the root to the farthest leaf) of such a tree on k nodes can be described as",log2 n,log4/3 n,log3 n,log3/2 n,a
