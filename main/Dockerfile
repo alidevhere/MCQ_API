@@ -7,4 +7,4 @@ RUN go mod download
 COPY *.go /app/
 COPY data.csv /app/
 RUN go build -o api
-CMD ["api"]
+CMD ["./api"]
