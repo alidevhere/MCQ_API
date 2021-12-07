@@ -1,5 +1,7 @@
 package main
 
+import "gopkg.in/mgo.v2/bson"
+
 type Mcq struct {
 	Id        uint   `json:"id"`
 	Statement string `json:"statement"`
@@ -8,6 +10,16 @@ type Mcq struct {
 	C         string `json:"c"`
 	D         string `json:"d"`
 	Answer    string `json:"ans"`
+}
+
+type McqDB struct {
+	Id        bson.ObjectId `bson:"_id,omitempty"`
+	Statement string
+	A         string
+	B         string
+	C         string
+	D         string
+	Answer    string
 }
 
 type contentType struct {
