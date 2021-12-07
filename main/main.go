@@ -17,6 +17,7 @@ func CheckError(err error, str string) {
 func main() {
 	fmt.Println("Started")
 	loadData("./data.csv", data)
+	//truncateData("./data.csv", "./updatedData.csv")
 	fmt.Println("Listening....")
 	runAPI()
 }
