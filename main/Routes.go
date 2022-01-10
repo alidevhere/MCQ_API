@@ -1,7 +1,7 @@
 package main
 
 import (
-	"fmt"
+	"log"
 	"net/http"
 
 	"github.com/gorilla/mux"
@@ -30,8 +30,8 @@ func runAPI() {
 	}
 
 	//fmt.Println("Listening....")
-	server.ListenAndServe()
-	fmt.Println("Accepted...")
+	log.Fatal(server.ListenAndServe())
+	//fmt.Println("Accepted...")
 
 	//	truncateData("./data.csv", "ds")
 }

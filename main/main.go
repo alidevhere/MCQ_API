@@ -8,6 +8,8 @@ import (
 
 	"gopkg.in/mgo.v2"
 	"gopkg.in/mgo.v2/bson"
+	"gorm.io/driver/mysql"
+	"gorm.io/gorm"
 )
 
 //MAP for storing data after reading from file
@@ -25,7 +27,18 @@ func main() {
 	//truncateData("./data.csv", "./updatedData.csv")
 	//fmt.Println("Listening....")
 	//runAPI()
-	loadDataToDB("./data.csv")
+	//loadDataToDB("./data.csv")
+	initializeDB()
+}
+
+func initializeDB() *gorm.DB {
+	dsn := "rana:ali123@tcp(localhost:3306)/MCQ_API?charset=utf8mb4&parseTime=True&loc=Local"
+	db, err := gorm.Open(mysql.Open(dsn), &gorm.Config{})
+	fmt.Println("DB: ", db)
+	if err != nil {
+		fmt.Print("ERROR: ", err)
+	}
+	return db
 }
 
 func loadDataToDB(path string) {
