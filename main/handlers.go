@@ -1,5 +1,8 @@
 package main
 
+//	TODO: Apply pagination
+// TODO : Return internal error on failing Marshal
+
 import (
 	"encoding/json"
 	"fmt"
@@ -11,15 +14,26 @@ import (
 	"github.com/gorilla/mux"
 )
 
-//	TODO: Apply pagination
-// TODO : Return internal error on failing Marshal
+type ApiMcq struct {
+	Statement     string `json:"statement"`
+	CorrectOption string `json:"CorrectOption"`
+	A             string `json:"A"`
+	B             string `json:"B"`
+	C             string `json:"C"`
+	D             string `json:"D"`
+}
 
+// Gets all records
+//QUERY:  SELECT * FROM mcqs;
 func getAllMcqs(w http.ResponseWriter, r *http.Request) {
-	var mcqs []Mcq
+	// METHOD 1
+	var mcqs []ApiMcq
+	DB.Model(&MCQ{}).Find(&mcqs)
+	print(len(mcqs))
 
-	for _, mcq := range data {
-		mcqs = append(mcqs, mcq)
-	}
+	// METHOD 2
+	// By  RAW SQL
+	//https://gorm.io/docs/sql_builder.html
 
 	w.Header().Set("Content-Type", "application/json")
 	output, err := json.Marshal(mcqs)
@@ -62,7 +76,11 @@ func getRandomMcq(w http.ResponseWriter, r *http.Request) {
 
 func getMcqById(w http.ResponseWriter, r *http.Request) {
 	id := mux.Vars(r)["id"]
-	if mcq, ok := data[id]; ok {
+	var mcq ApiMcq
+	result := DB.Model(&MCQ{}).First(&mcq, id)
+
+	fmt.Println(result.RowsAffected)
+	if result.RowsAffected == 1 {
 		out, err := json.Marshal(mcq)
 		CheckError(err, " in func getMcqByID")
 		if err != nil {
@@ -74,36 +92,44 @@ func getMcqById(w http.ResponseWriter, r *http.Request) {
 		w.Header().Set(ContentType.ContentType())
 		w.WriteHeader(http.StatusOK)
 		w.Write(out)
+	} else {
+		w.Header().Set(ContentType.ContentType())
+		w.WriteHeader(http.StatusNotFound)
+		w.Write([]byte("{\"error\":\"Id Not Found\"}"))
 	}
-	fmt.Println("ID ", id)
-	fmt.Println(data[id])
-
 }
 
 func UpdateMcqByID(w http.ResponseWriter, r *http.Request) {
 	id := mux.Vars(r)["id"]
-	var updatedMcq Mcq
-	if _, ok := data[id]; ok {
-		err := json.NewDecoder(r.Body).Decode(&updatedMcq)
+	var newMcq MCQ
+	var OldMcq MCQ
+
+	result := DB.Model(&MCQ{}).First(&OldMcq, id)
+
+	if result.RowsAffected == 1 {
+		err := json.NewDecoder(r.Body).Decode(&newMcq)
 		//fmt.Print(r.Body)
 		CheckError(err, " In UpdateMcqById function")
 		//fmt.Print(updatedMcq)
-		i, _ := strconv.ParseUint(id, 10, 64)
-		updatedMcq.Id = uint(i)
-		data[id] = updatedMcq
-		w.WriteHeader(http.StatusNoContent)
+		// ID updating should not be permissible
+		DB.Model(&OldMcq).Updates(&newMcq)
+		w.WriteHeader(http.StatusOK)
 
 	} else {
-		w.WriteHeader(http.StatusNotFound)
+		w.WriteHeader(http.StatusNoContent)
+
 	}
+
+	//	w.WriteHeader(http.StatusNotFound)
 
 }
 
 func DeleteMcqById(w http.ResponseWriter, r *http.Request) {
+
 	id := mux.Vars(r)["id"]
-	if _, ok := data[id]; ok {
-		delete(data, id)
-		w.WriteHeader(http.StatusNoContent)
+	result := DB.Delete(&MCQ{}, id)
+	if result.RowsAffected == 1 {
+		w.WriteHeader(http.StatusOK)
 	} else {
 		w.WriteHeader(http.StatusNotFound)
 	}
@@ -111,14 +137,40 @@ func DeleteMcqById(w http.ResponseWriter, r *http.Request) {
 }
 
 func CreateMcq(w http.ResponseWriter, r *http.Request) {
-	var mcq Mcq
+	var mcq MCQ
 	err := json.NewDecoder(r.Body).Decode(&mcq)
 	CheckError(err, " inside CreateMcq")
-	mcq.Id = uint(len(data) + 1)
-	data[strconv.Itoa(len(data)+1)] = mcq
-	j, err := json.Marshal(&mcq)
-	CheckError(err, " inside CreateMcq: Marshelling failed")
-	w.Header().Set("content-type", "application/json")
-	w.WriteHeader(http.StatusCreated)
-	w.Write(j)
+	result := DB.Create(&mcq)
+	fmt.Println(mcq)
+
+	if result.RowsAffected == 1 {
+		j, err := json.Marshal(&mcq)
+		CheckError(err, " inside CreateMcq: Marshelling failed")
+		w.Header().Set("content-type", "application/json")
+		w.WriteHeader(http.StatusCreated)
+		w.Write(j)
+	} else {
+		w.WriteHeader(http.StatusNotAcceptable)
+	}
+
+}
+
+func SearchByStmt(w http.ResponseWriter, r *http.Request) {
+	stmt := mux.Vars(r)["stmt"]
+	var mcqs []MCQ
+	//println("Statement===", stmt)
+	DB.Where("statement LIKE ?", "%"+stmt+"%").Find(&mcqs)
+	if len(mcqs) > 0 {
+		output, err := json.Marshal(mcqs)
+		if err != nil {
+			w.WriteHeader(http.StatusInternalServerError)
+			return
+		}
+		w.Header().Set("content-type", "application/json")
+		w.WriteHeader(http.StatusOK)
+		w.Write(output)
+	} else {
+		w.WriteHeader(http.StatusNotFound)
+	}
+
 }

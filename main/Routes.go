@@ -1,6 +1,7 @@
 package main
 
 import (
+	"fmt"
 	"log"
 	"net/http"
 
@@ -10,7 +11,7 @@ import (
 func runAPI() {
 	//Router
 	r := mux.NewRouter().StrictSlash(true)
-	//fmt.Println("Started...")
+	fmt.Println("Started...")
 
 	//=========	ROUTES  ==========
 
@@ -20,6 +21,7 @@ func runAPI() {
 	r.HandleFunc("/mcq/{id}", UpdateMcqByID).Methods("PUT")
 	r.HandleFunc("/mcq", CreateMcq).Methods("POST")
 	r.HandleFunc("/mcq/{id}", DeleteMcqById).Methods("DELETE")
+	r.HandleFunc("/mcqs/search/{stmt}", SearchByStmt).Methods("GET")
 
 	//===========
 
@@ -29,7 +31,7 @@ func runAPI() {
 		Handler: r,
 	}
 
-	//fmt.Println("Listening....")
+	fmt.Println("Listening....")
 	log.Fatal(server.ListenAndServe())
 	//fmt.Println("Accepted...")
 
